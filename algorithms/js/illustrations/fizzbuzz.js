@@ -20,5 +20,5 @@ for (let index = 1; index < 101; index++) {
         isFizz && isBuzz ? "FizzBuss" : isFizz
             ? "Fizz" : isBuzz
                 ? "Buzz" : index
-    console.log(result)
+    
 }

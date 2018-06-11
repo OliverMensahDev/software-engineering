@@ -1,6 +1,7 @@
-function primeFactors(n){
+function isPrime(n){
   let factors = [],
       divisor = 2;
+
   while( n >= 2 ) {
     if( n % divisor == 0){
       factors.push(divisor);
@@ -9,10 +10,11 @@ function primeFactors(n){
       divisor++;
     }
   }
-  return factors;
+  return factors.length === 1 
 }
 
-console.log(primeFactors(2));
-primeFactors(2).forEach(function(element, index){
-  console.log(element);
-})
+
+console.log(isPrime(2));
+console.log(isPrime(3));
+console.log(isPrime(5));
+console.log(isPrime(9));

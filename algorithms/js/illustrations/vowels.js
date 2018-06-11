@@ -3,10 +3,10 @@ function countVowels(str){
         return "Please Enter Data";
     }
     vowels = "aeiou";
-    var count = 0;
-    var str = str.toLowerCase();
-    console.log(str);
-    for(let i = 0; i< str.length; i++){
+    let count = 0;
+    let str = str.toLowerCase();
+    let length = str.length;
+    for(let i = 0; i< length; i++){
         if(vowels.includes(str[i])){
             count++;
         }
