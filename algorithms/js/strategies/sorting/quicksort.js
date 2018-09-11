@@ -2,7 +2,6 @@ function qSort(arr){
     if(arr.length === 0){
         return [];
     }
-
     var left = [];
     var right= [] ;
     var pivot = arr[0]

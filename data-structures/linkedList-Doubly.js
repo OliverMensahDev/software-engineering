@@ -1,44 +1,48 @@
- //node 
- class Node {
+class Node {
     constructor(value, next, prev){
         this.value = value;
-        this.next = next;
-        this.prev = prev;
+        this.next = next,
+        this.prev = prev
     }    
 }
-
-class LinkeList{
+class DoublyLinkedList {
     constructor(){
         this.head = null;
         this.tail = null;
     }
-    addTohead(value) {
-        var newNode = new Node(value, this.head, null);
-        if (this.head) this.head.prev = newNode;
-        else this.tail = newNode;
-        this.head = newNode;
-    };
-    addToTail(value) {
-        var newNode = new Node(value, null, this.tail);
-        if (this.tail) this.tail.next = newNode;
-        else this.head = newNode;
-        this.tail = newNode;
-    };
+    addTohead(val){
+        if(!this.head){
+            let newNode = new Node(val,null, null);
+            this.head = newNode;
+            this.tail = newNode
+        }else{
+            let newNode = new Node(val, this.head, null);
+            newNode.next = this.head;
+            this.head = newNode;
+        }
+    }
+    addToTail(val){
+        let newNode = new Node(val, null);
+        if(!this.tail){
+            this.tail = newNode;
+            this.head = newNode;
+        }else{
+            this.tail.next = newNode;
+            this.tail = newNode;
+        }
+    }
+
     removeHead() {
         if (!this.head) return null;
         var val = this.head.value;
         this.head = this.head.next;
-        if (this.head) this.head.prev = null;
-        else this.tail = null;
         return val;
     };
       
     removeTail() {
         if (!this.tail) return null;
         var val = this.tail.value;
-        this.tail = this.tail.prev;
-        if (this.tail) this.tail.next = null;
-        else this.head = null;
+        this.tail = null;
         return val;
     };
     search(searchValue) {
@@ -48,26 +52,14 @@ class LinkeList{
           currentNode = currentNode.next;
         } 
         return null;
-    };
-      
-    getIndex(value) {
-        var indexes = [];
-        var currentIndex = 0;
-        var currentNode = this.head;
-        while(currentNode) {
-          if (currentNode.value === value) indexes.push(currentIndex);
-          currentNode = currentNode.next;
-          currentIndex++;
-        }
-        return indexes;
-    };
- }
+    };   
 
- let ll = new LinkeList();
- ll.addTohead(5);
- ll.addTohead(10);
- ll.addToTail(20)
- ll.addToTail(30)
- console.log(ll);
- 
- 
+}
+
+
+const s = new DoublyLinkedList();
+s.addTohead(1)  
+s.addTohead(2)
+s.addTohead(3);
+console.log(s.head.next);
+

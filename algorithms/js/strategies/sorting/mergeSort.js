@@ -1,38 +1,27 @@
-var called = 0
-function merge(left, right){
-    console.log("called "+ ++called);
-    console.log(left, right)
-    var result = [];
-    var lLen = left.length, 
-        rLen = right.length,
-        l = 0, 
-        r=0;
-    while( l < lLen && r < rLen){
-        if( left[l] < right[r]){
-            result.push(left[l++])
-        }else{
-            result.push(right[r++])
-        }
-    }
-    console.log(result.concat(left.slice(l).concat(right.slice(r))))
-    return result.concat(left.slice(l).concat(right.slice(r)))
+const list = [23, 4, 42, 15, 16, 8, 3, 5];
+const mergeSort = (list) => {
+  if (list.length <= 1) return list;
+  const middle = list.length / 2;
+  const left = list.slice(0, middle);
+  const right = list.slice(middle, list.length);
+  return merge(mergeSort(left), mergeSort(right));
 }
-var calledHere = 0
-function mergeSort(arr){
-    console.log("calledHere "+ ++calledHere)
-    var len = arr.length;
-    if(len < 2){
-        return arr;
+const merge = (left, right) => {
+  var result = [];
+  while (left.length || right.length) {
+    if (left.length && right.length) {
+      if (left[0] < right[0]) {
+        result.push(left.shift());
+      } else {
+        result.push(right.shift());
+      }
+    } else if (left.length) {
+      result.push(left.shift());
+    } else {
+      result.push(right.shift());
     }
-    var mid = Math.floor(len/2),
-        left = arr.slice(0, mid),
-        right = arr.slice(mid);
-    console.log(mid)
-    console.log("Left: "+left)
-    console.log("right: " +right)
-    return merge(mergeSort(left), mergeSort(right));
+  }
+  return result;
 }
 
-
-var arr =[1,2,10, 0, 3, 5];
-console.log(mergeSort(arr));
+console.log(mergeSort(list));
