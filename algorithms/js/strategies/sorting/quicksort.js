@@ -2,16 +2,11 @@ function qSort(arr){
     if(arr.length === 0){
         return [];
     }
-    var left = [];
-    var right= [] ;
-    var pivot = arr[0]
-
-    for( var i = 1; i< arr.length; i++){
-        if(arr[i] < pivot){
-            left.push(arr[i])
-        }else{
-            right.push(arr[i])
-        }
+    let left = [];
+    let right= [] ;
+    let pivot = arr[arr.length- 1]
+    for( var i = 0; i< arr.length -1; i++){
+        arr[i] < pivot ? left.push(arr[i]): right.push(arr[i]);
     }
     return qSort(left).concat(pivot, qSort(right));
 }
@@ -23,3 +18,5 @@ for( var i = 0; i < 10; i++){
 
 console.log(a)
 console.log(qSort(a))
+console.log(a);
+
