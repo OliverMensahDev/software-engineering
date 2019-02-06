@@ -37,23 +37,50 @@ class BST {
     breadthFirstTraversal(iteratorFunc) {
         var queue = [this];
         while (queue.length) {
-        var treeNode = queue.shift();
-        iteratorFunc(treeNode);
-        if (treeNode.left) queue.push(treeNode.left);
-        if (treeNode.right) queue.push(treeNode.right);
+            var treeNode = queue.shift();
+            iteratorFunc(treeNode);
+            if (treeNode.left) queue.push(treeNode.left);
+            if (treeNode.right) queue.push(treeNode.right);
         }
     };
   
-    getMinVal() {
-        if (this.left) return this.left.getMinVal();
-        else return this.value;
-    };
+    findSmallest() {
+        let current = this;
+        while (current) {
+            if (!current.left) return current.value;
+            current = current.left;
+        }
+        return current.value
+    }
+
   
-    getMaxVal() {
-        if (this.right) return this.right.getMaxVal();
-        else return this.value;
-    };
-  
+    findLargest() {
+        let current = this;
+        while (current) {
+            if (!current.right) return current.value;
+            current = current.right;
+        }
+        return current.value
+    }
+    findSecondLargest() {
+        if (!this || (!this.left && !this.right)) {
+            throw new Error('Tree must have at least 2 nodes');
+        } 
+        let current = this;
+        while (current) {
+            // Case: current is largest and has a left subtree
+            // 2nd largest is the largest in that subtree
+            if (current.left && !current.right) {
+                return findLargest(current.left);
+            } 
+            if (current.right    && !current.right.left && !current.right.right) {
+                return current.value;
+            }
+            current = current.right;
+        }
+        return current
+    }
+    
 } 
 let  bst = new BST(50);
   
@@ -74,3 +101,8 @@ let  bst = new BST(50);
   }
   
   bst.breadthFirstTraversal(log);
+
+//   console.log(bst.findSecondLargest());
+
+bst.print()
+  
