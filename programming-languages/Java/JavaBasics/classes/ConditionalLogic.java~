@@ -1,0 +1,21 @@
+class ConditionalLogic {
+  public static void main(String[] args){
+    int b = 1;
+  
+    if( b == 2) {
+      System.out.println("B is "+ 2);
+    }
+    else if( b > 2){
+      System.out.println("B  is greater than "+ 2);
+    }
+    else {
+      System.out.println();
+    }
+    
+    int c = 5;
+    
+    if ( c == 2)  System.out.println(" C is "+ 2);
+    else if( c > 2) System.out.println("C  is greater than "+ 2);
+    else System.out.println();
+  }
+}

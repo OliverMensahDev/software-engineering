@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Select and  change  content</title>
+    </head>
+    <body>
+        <div class="page1">
+            <p id='p'>The man has been here</p>
+        </div>
+    </body>
+        <div class="page2">
+            <p>The woman has been here</p>
+        </div>
+    </body>
+    <script type="text/javascript">
+    //textContent vs innerHTML
+    var elm = document.getElementById('p');
+    var text =  "<p>Good</p>"
+    elm.textContent = text;
+
+    </script>
+</html>

@@ -1,0 +1,10 @@
+class ConditionalAssignment{
+  public static void main(String[] args){
+    int age = 5;
+    String result;
+    
+    result = age > 6? "Old" : "Young";
+    
+    System.out.println(result);
+  }
+}

@@ -1,0 +1,10 @@
+
+
+
+public class BaseballS extends Ball  {
+    //Properties
+
+
+
+    //Behaviors (override), new ones
+}

@@ -1,0 +1,23 @@
+// FONTS
+
+@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded);
+@import url(https://fonts.googleapis.com/css?family=Ultra);
+@import url(https://fonts.googleapis.com/css?family=Vast+Shadow);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+// FRAMEWORK
+@import "../../node_modules/bulma/bulma";
+
+// VARIABLES
+@import 'variables/variables';
+
+// GLOBALS
+@import 'global/global';
+
+// MODULES
+@import 'modules/navbar';
+@import 'modules/hero';
+@import 'modules/columns';
+@import 'modules/footer';
+@import 'modules/modal';

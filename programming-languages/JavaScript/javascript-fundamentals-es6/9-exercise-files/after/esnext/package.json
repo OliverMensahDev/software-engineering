@@ -1,0 +1,8 @@
+{
+  "name": "package",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "esnext": "^0.8.2"
+  }
+}

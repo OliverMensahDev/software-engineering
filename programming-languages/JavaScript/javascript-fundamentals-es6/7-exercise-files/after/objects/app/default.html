@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ES6 Tests</title>
+
+  <link rel="shortcut icon" type="image/png" href="jasmine/images/jasmine_favicon.png">
+  <link href="jasmine/lib/jasmine-core/jasmine.css" rel="stylesheet"/>
+	<script src="http://localhost:35729/livereload.js"></script>
+	<script src="traceur/traceur.js"></script>
+  <script type="text/javascript" src="jasmine/lib/jasmine-core/jasmine.js"></script>
+  <script type="text/javascript" src="jasmine/lib/jasmine-core/jasmine-html.js"></script>
+  <script type="text/javascript" src="jasmine-boot.js"></script>
+
+  <script type="module" src="objectSpec.js"></script>
+
+  <script type="module" src="jasmine-run.js"></script>
+
+  <script>
+    traceur.options.experimental = true;
+    traceur.options.sourceMap = true;
+    new traceur.WebPageTranscoder(window.location.href).run();
+  </script>
+
+</head>
+<body>
+</body>
+</html>

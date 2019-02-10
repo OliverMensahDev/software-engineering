@@ -1,0 +1,16 @@
+{
+  "name": "egghead-async-await",
+  "version": "1.0.0",
+  "author": "Marius Schulz",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "node-fetch": "^1.6.3"
+  },
+  "scripts": {
+    "build:8": "tsc -p ./lesson-8"
+  },
+  "devDependencies": {
+    "typescript": "^2.3.0-dev.20170404"
+  }
+}

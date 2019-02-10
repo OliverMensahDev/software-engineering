@@ -1,0 +1,45 @@
+class Main{
+  public static void main(String[] args){
+    DB roomdb = new Room
+      .databaseBuilder("app context", DB.class, "db")
+      .build();
+    System.out.println(roomdb);
+  }  
+}
+
+class DB{
+  private String context;
+  private Object obj;
+  private String dbName;
+  
+  public DB(Room room){
+    this.context = room.context;
+    this.obj = room.obj;
+    this.dbName = room.dbName;
+  }
+  
+  @Override 
+  public String toString(){
+    return "context: " + this.context + "\n" 
+      + "dbName: " + this.dbName + "\n"
+      +"obj: " + this.obj + "\n";
+  }
+}
+
+class Room {
+  public String context;
+  public Object obj;
+  public String dbName;
+  
+  
+  public Room databaseBuilder(String context, Object obj, String dbName){
+    this.context = context;
+    this.obj = room.obj;
+    this.dbName = room.dbName;
+    return this;
+  }
+  public DB build(){
+    return new DB(this);
+  }
+}
+  

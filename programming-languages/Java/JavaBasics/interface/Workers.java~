@@ -1,0 +1,5 @@
+class Workers implements Payable {
+  private String name;
+  
+  
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Traceur In-Page compilation</title>
+
+  <script src="https://traceur-compiler.googlecode.com/git/bin/traceur.js"></script>
+  <script src="https://traceur-compiler.googlecode.com/git/src/bootstrap.js"></script>
+  <script>
+    traceur.options.experimental = true;
+    traceur.options.sourceMap = true;
+     // new traceur.WebPageTranscoder(window.location.href).run();
+  </script>
+
+  <script type="module">
+    let message = "in page module"
+    console.log(message);
+  </script>
+
+  <script type="module" src="es6Code.js"></script>
+
+</head>
+<body>
+</body>
+</html>

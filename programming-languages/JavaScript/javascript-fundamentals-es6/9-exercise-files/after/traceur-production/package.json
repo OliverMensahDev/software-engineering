@@ -1,0 +1,11 @@
+{
+  "name": "package",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-traceur": "^0.1.2",
+    "gulp": "^3.8.6",
+    "gulp-traceur": "^0.8.0"
+  }
+}

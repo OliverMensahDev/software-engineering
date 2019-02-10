@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <title>AddressBook</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#">AddressBook</a>
+       </div>
+       <div id="navbar" class="collapse navbar-collapse">
+         <ul class="nav navbar-nav">
+           <li><a href="index.html">Home</a></li>
+           <li class="active"><a href="add.html">Add Contact</a></li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+   <div class="container">
+     <div id="added"></div>
+     <h2 class="page-header">Add Contact</h2>
+     <form id="contactForm">
+       <div class="form-group">
+         <label>Name</label>
+         <input type="text" id="name" class="form-control">
+       </div>
+       <div class="form-group">
+         <label>Email</label>
+         <input type="text" id="email" class="form-control">
+       </div>
+       <div class="form-group">
+         <label>Phone</label>
+         <input type="text" id="phone" class="form-control">
+       </div>
+       <div class="form-group">
+         <label>Street Address</label>
+         <input type="text" id="street" class="form-control">
+       </div>
+       <div class="form-group">
+         <label>City</label>
+         <input type="text" id="city" class="form-control">
+       </div>
+       <div class="form-group">
+         <label>Zipcode</label>
+         <input type="text" id="zipcode" class="form-control">
+       </div>
+       <input type="submit" class="btn btn-primary" value="Submit">
+     </form>
+   </div><!-- /.container -->
+
+    <script src="./js/main.js"></script>
+    <script>
+      // Handle Submit
+      document.getElementById('contactForm').addEventListener('submit', function(e){
+          e.preventDefault();
+            let person = {
+              name: document.getElementById('name').value,
+              email: document.getElementById('email').value,
+              phone: document.getElementById('phone').value,
+              address:{
+                street: document.getElementById('street').value,
+                city: document.getElementById('city').value,
+                zipcode: document.getElementById('zipcode').value
+              }
+            }
+
+        let contact = new Contact(person);
+        contact.saveContact();
+        return false;
+      });
+    </script>
+  </body>
+</html>

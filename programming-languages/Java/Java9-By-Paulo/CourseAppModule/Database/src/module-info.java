@@ -1,0 +1,3 @@
+module Database {
+    exports database;
+}

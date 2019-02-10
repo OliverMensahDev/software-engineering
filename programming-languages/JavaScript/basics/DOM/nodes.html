@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <div id="div1">
+            <p id="p1">Twinkle, twinkle little star</p>
+            <p id="p2">How I wonder what you are.</p>
+        </div>
+        <script type="text/javascript">
+            //1 adding text
+            var para = document.createElement('p');
+            var node = document.createTextNode("Up above the world so high");
+            para.appendChild(node);
+            //you can replace step 2 and 3 with innerHTML
+            var parent = document.getElementById('div1');
+            parent.appendChild(para);
+
+            //2 insertBefore
+            var para2 = document.createElement('p');
+            para2.innerHTML = 'Great app test';
+            var child = document.getElementById('p1');
+            parent.insertBefore(para2, child);
+
+            //replaceChild
+            var para3 = document.createElement('p');
+            para3.innerHTML = 'I am Oliver and I dont behave like a bossy';
+            parent.replaceChild(para3, child);
+
+            //removeChild
+            parent.removeChild(para3);
+        </script>
+
+    </body>
+</html>

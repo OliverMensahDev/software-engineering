@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="traceur/traceur.js"></script>
+	<script>
+		traceur.options.experimental = true;
+	</script>
+
+
+	<script type="module">
+		
+	</script>
+
+	<script>
+	  new traceur.WebPageTranscoder(
+	  	document.location.href).run();
+	</script>
+  </head>
+  <body></body>
+</html>

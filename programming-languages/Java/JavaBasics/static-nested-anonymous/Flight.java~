@@ -1,0 +1,19 @@
+class Flight {
+// other members elided for clarity
+  int passengers;
+  void add1Passenger() {
+    if(hasSeating()) {
+      passengers += 1;
+      allPassengers += 1;
+    } else
+      handleTooMany();
+  }
+}
+static int allPassengers;
+
+static int getAllPassengers() {
+  return allPassengers;
+}
+static int resetAllPassengers() {
+  allPassengers = 0;
+}
