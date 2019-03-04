@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1551677752 source:/home/oliver/Desktop/first/main.cpp
+	<iostream>
+	<iomanip>
+	<cstdlib>
+
