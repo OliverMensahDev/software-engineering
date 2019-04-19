@@ -47,41 +47,41 @@ final class ServiceLocator {
     }
 }
 
-// // injecting the service
-// final class HomepageController {
+// injecting the service
+final class HomepageController {
 
-//     public function __construct(ServiceLocator $locator){
-//         /*
-//         * Instead of injecting the dependencies we need, we just
-//         * inject the whole `ServiceLocator`, from which we can
-//         * later retrieve any specific dependency, the moment we
-//         * need it.
-//         */
-//         $this->locator = $locator;
-//     }
-//     public function __invoke(Request $request): Response {
-//         $user = $this->locator->get(EntityManager::class)
-//             ->getRepository(User::class)
-//             ->findOneBy($request->get('userId'));
+    public function __construct(ServiceLocator $locator){
+        /*
+        * Instead of injecting the dependencies we need, we just
+        * inject the whole `ServiceLocator`, from which we can
+        * later retrieve any specific dependency, the moment we
+        * need it.
+        */
+        $this->locator = $locator;
+    }
+    public function __invoke(Request $request): Response {
+        $user = $this->locator->get(EntityManager::class)
+            ->getRepository(User::class)
+            ->findOneBy($request->get('userId'));
 
-//         return $this->locator->get(ResponseFactory::class)
-//             ->create()
-//             ->withContent($this->locator->get(TemplateRenderer::class)
-//             ->render('homepage.html.twig', [
-//                 'user' => $user
-//                 ]
-//             ),
-//             'text/html'
-//         );
-//     }
+        return $this->locator->get(ResponseFactory::class)
+            ->create()
+            ->withContent($this->locator->get(TemplateRenderer::class)
+            ->render('homepage.html.twig', [
+                'user' => $user
+                ]
+            ),
+            'text/html'
+        );
+    }
 
-//     public function sendData(): string{
-//         return $this->locator->get(FileLogger::class)->log("Oliver");
-//     }
-// }
+    public function sendData(): string{
+        return $this->locator->get(FileLogger::class)->log("Oliver");
+    }
+}
 
-// $data = new HomepageController(new ServiceLocator());
-// echo $data->sendData();
+$data = new HomepageController(new ServiceLocator());
+echo $data->sendData();
 
 
 

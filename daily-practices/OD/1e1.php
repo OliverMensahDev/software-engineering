@@ -50,19 +50,21 @@ final class FileLogger implements Logger{
 final class BankStatementImporter{
     // private ?Logger $logger;
     
-    public function __construct(Logger $logger=null){
+    public function __construct(Logger $logger){
         // logger can be null or instance of Logger
         $this->logger = $logger;
     }
 
     public function import(string $bankStatementFilePath): void{
-        // import file
-        if($this->logger instanceof Logger){
             $this->logger->log('A Message');
-        }
     }
 }
 
 $logger = new BankStatementImporter(new NullLogger());
+$logger->import('');
+
+
+
+$logger = new BankStatementImporter(new FileLogger(new DefaultFormatter()));
 $logger->import('');
 

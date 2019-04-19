@@ -1,0 +1,54 @@
+#ifndef STACK_INCLUDED
+#define STACK_INCLUDED
+
+
+
+#endif // STACK_INCLUDED
+template <class T>
+class Stack{
+    public:
+        Stack(int = 10);
+        ~Stack();
+        void push(const T&)
+        T pop();
+        bool empty();
+    private:
+        int size;
+        int top;
+        T* stack;
+        bool isFull();
+
+
+};
+
+template <class T>
+bool Stack::empty(){return top == -1;}
+
+template <class T>
+bool Stack<T>::isFull(){return top == size -1;}
+
+template <class T>
+Stack<T>::Stack(int s){
+    size = s;
+    top = -1
+    stack = new T[size];
+}
+
+template <class T>
+Stack<T>::~Stack(){
+    if(stack != NULL){
+        delete[] stack;
+    }
+}
+
+template <class T>
+void Stack<T>::push(const T& pushValue){
+    if(!isFull()){
+      stack[++top] = pushValue;
+    }
+}
+
+template <class T>
+T Stack<T>::pop(){
+    return stack[top--];
+}

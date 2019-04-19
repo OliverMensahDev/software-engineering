@@ -29,8 +29,7 @@ final class FileLogger implements Logger{
     // private Formatter $formatter;
     // private string $logFilePath;
 
-    public function __construct(Formatter $formatter, string $logFilePath
-    ){
+    public function __construct(Formatter $formatter, string $logFilePath){
         $this->formatter = $formatter;
         
         /*

@@ -10,9 +10,10 @@ public class App {
 	private static int counter = 0;
 	private static Lock lock = new ReentrantLock();
 	
-	public static void increment(){
+	public static void increment(String location){
 		lock.lock();
 		counter++;
+		System.out.println("Executing from "+ location);
 		lock.unlock();
 	}
 	
