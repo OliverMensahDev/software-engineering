@@ -30,40 +30,25 @@ final class User
     }
 }
 $email = "dafasf";
-// $user = new User($email);
-// $user->changeEmailAddress($email);
+$user = new User($email);
+$user->changeEmailAddress($email);
 
-
-    
-//better
-final class EmailAddress
-{
-    private $emailAddress;
-    public function __construct(string $emailAddress)
-    {
-        if (!filter_var($emailAddress, FILTER_VALIDATE_EMAIL)) {
-            throw new InvalidArgumentException(
-                'Invalid email address'
-            );
-        }
-        $this->emailAddress = $emailAddress;
+// The constructor will catch invalid email addresses
+expectException(
+    InvalidArgumentException::class,
+    'email',
+    function () {
+        new User('not-a-valid-email-address');
     }
-}
+);
 
-
-final class User1
-{
-    private $emailAddress;
-    public function __construct(EmailAddress $emailAddress)
-    {
-        $this->emailAddress = $emailAddress;
+// create a valid `User` object first
+$user = new User('valid@emailaddress.com');
+// `changeEmailAddress()` will also catch invalid email addresses
+expectException(
+    InvalidArgumentException::class,
+    'email',
+    function () use ($user) {
+        $user->changeEmailAddress('not-a-valid-email-address');
     }
-
-    public function changeEmailAddress(EmailAddress $emailAddress)
-    {
-        $this->emailAddress = $emailAddress;
-    }
-}
-$emailAddress = new EmailAddress($email);
-$user = new User1($emailAddress);
-$user->changeEmailAddress($emailAddress);
+);

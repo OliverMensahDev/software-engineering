@@ -22,18 +22,10 @@ final class Position
     }
 }
 $a = new Position();
-// $a->setX(45);
-// $a->setY(60);
+$a->setX(45);
+$a->setY(60);
 
 $b = new Position();
 // $b->setX(60);
 // $b->setY(80);
 echo $a->distanceTo($b);
-
-
-///set constructor and remove settors
-// public function __construct(int $x, int $y)
-// {
-// $this->x = $x;
-// $this->y = $y;
-// }

@@ -42,10 +42,12 @@ final class Converter
         }
     }
 }
-$product = new Product;
+
 $localAmount = new Amount(59.00);
 $localCurrency = new Currency("GHS");
 $foreignCurrency = new Currency("USD");
+
+$product = new Product;
 $product->setPrice($localAmount, $localCurrency);
 echo $product->getPrice() . "\n";
 
