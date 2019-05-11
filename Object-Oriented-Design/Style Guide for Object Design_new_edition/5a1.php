@@ -7,6 +7,7 @@ final class Counter
   {
     $this->count++;
   }
+  
   public function currentCount(): int 
   {
     return $this->count;

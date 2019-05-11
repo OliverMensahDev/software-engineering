@@ -13,3 +13,7 @@ final class Counter
     return $this->count;
   }
 }
+
+
+assertEquals(1,(new Counter())->incremented()->currentCount());
+assertEquals(2,(new Counter())->incremented()->incremented()->currentCount());
