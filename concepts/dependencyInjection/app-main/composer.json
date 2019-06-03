@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "psr-4":{
+      "testapp\\": "testapp" 
+    }
+  },
+  "require": {
+    "league/csv": "^9.2"
+  }
+}
