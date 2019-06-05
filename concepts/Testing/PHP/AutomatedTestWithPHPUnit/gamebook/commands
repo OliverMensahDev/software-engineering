@@ -1,0 +1,5 @@
+./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/GameTest.php 
+
+./vendor/bin/phpunit --bootstrap vendor/autoload.php --testdox tests
+
+./vendor/bin/phpunit --colors --bootstrap vendor/autoload.php --testdox tests

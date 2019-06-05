@@ -1,9 +1,10 @@
 <?php
 
-error_reporting(E_ALL); 
-ini_set("html_errors", 1); 
+require __DIR__ . "/../src/Repository/GameRepository.php";
 
 require __DIR__ . "/../src/Repository/GameRepository.php";
+
+
 
 $repo = new GameRepository();
 $games = $repo->findByUserId(1);
