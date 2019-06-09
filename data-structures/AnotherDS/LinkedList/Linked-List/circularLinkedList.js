@@ -1,3 +1,8 @@
+function Node(element) {
+    this.element = element;
+    this.next = null;
+}
+
 function LList() {
     this.head = new Node("head");
     this.head.next = this.head;
@@ -7,12 +12,6 @@ function LList() {
     this.findPrevious = findPrevious;
     this.remove = remove;
 } 
-
-
-function Node(element) {
-    this.element = element;
-    this.next = null;
-}
 
 function find(item) {
     var currNode = this.head;

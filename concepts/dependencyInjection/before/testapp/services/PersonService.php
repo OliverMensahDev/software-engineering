@@ -12,7 +12,7 @@ final class PersonService
 
   public function addPerson(Person $newPerson)
   {
-    $dataStore[] = $newPerson;
+    
   }
 }
 

@@ -2,70 +2,68 @@ function Node(data, left, right) {
     this.data = data;
     this.left = left;
     this.right = right;
-    this.show = show;
-    }
+}
     
-    function show() {
+Node.prototype.show = function() {
     return this.data;
-    }
+}
     
-    function BST() {
+function BST() {
     this.root = null;
     this.insert = insert;
     this.inOrder = inOrder;
-    }
+}
     
-    function insert(data) {
+BST.prototype.insert = function(data) {
     var n = new Node(data, null, null);
     if (this.root == null) {
-    this.root = n;
+        this.root = n;
+    }else {
+        var current = this.root;
+        var parent;
+        while (true) {
+            parent = current;
+            if (data < current.data) {
+                current = current.left;
+                if (current == null) {
+                    parent.left = n;
+                    break;
+                }
+            }
+            else {
+                current = current.right;
+                if (current == null) {
+                    parent.right = n;
+                    break;
+                }
+            }
+        }
     }
-    else {
-    var current = this.root;
-    var parent;
-    while (true) {
-    parent = current;
-    if (data < current.data) {
-    current = current.left;
-    if (current == null) {
-    parent.left = n;
-    break;
-    }
-    }
-    else {
-    current = current.right;
-    if (current == null) {
-    parent.right = n;
-    break;
-    }
-    }
-    }
-    }
-    }
+}
     
-    function inOrder(node) {
+BST.prototype.inOrder = function(node) {
     if (!(node == null)) {
-    inOrder(node.left);
-    console.log(node.show() + " ");
-    inOrder(node.right);
+        inOrder(node.left);
+        console.log(node.show() + " ");
+        inOrder(node.right);
     }
-    }
+}
     
-    function preOrder(node) {
+BST.prototype.preOrder = function(node) {
     if (!(node == null)) {
-    console.log(node.show() + " ");
-    preOrder(node.left);
-    preOrder(node.right);
+        console.log(node.show() + " ");
+        preOrder(node.left);
+        preOrder(node.right);
     }
-    }
+}
     
-    function postOrder(node) {
+BST.prototype.postOrder = function(node) {
     if (!(node == null)) {
-    postOrder(node.left);
-    postOrder(node.right);
-    console.log(node.show() + " ");
+        postOrder(node.left);
+        postOrder(node.right);
+        console.log(node.show() + " ");
     }
-    }
+}
     
     var nums = new BST();
     nums.insert(23);
