@@ -24,7 +24,6 @@ function createNode(value) {
         this.tail.next = node
         this.tail = node
         this.length++
-  
         return node
       },
   
@@ -136,6 +135,7 @@ function createNode(value) {
   const list = createLinkedList()
   const values = ['a', 'b', 'c', 'd', 'e']
   const nodes = values.map(val => list.push(val))
+  console.log(list);
   
 //   list.pop()
   console.log(list.delete(3))

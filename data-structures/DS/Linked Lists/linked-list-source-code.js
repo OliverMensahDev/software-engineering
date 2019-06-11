@@ -1,12 +1,12 @@
-function LinkedList() {
-  this.head = null;
-  this.tail = null;
-}
-
 function Node(value, next, prev) {
   this.value = value;
   this.next = next;
   this.prev = prev;
+}
+
+function LinkedList() {
+  this.head = null;
+  this.tail = null;
 }
 
 LinkedList.prototype.addToHead = function(value) {

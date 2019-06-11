@@ -13,10 +13,8 @@ function qSort(arr){
             right.push(arr[i]);
         }
     }
-
     return qSort(left).concat(pivot,qSort(right));
 }
-
 var a= [];
 for(var i=0; i<10; i++){
     a[i] = Math.floor(Math.random()*100 + 1);
