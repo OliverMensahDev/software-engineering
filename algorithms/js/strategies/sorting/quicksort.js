@@ -20,3 +20,21 @@ console.log(a)
 console.log(qSort(a))
 console.log(a);
 
+// Another Version from My CodePlayGround
+const list = [3, 1, 30, 4];
+const qSort = list => {
+  if(list.length === 0 ) return [];
+  let pivot = list[0], left=[], right =[];
+  let newList = list.slice(1, list.length);
+  for(number of newList){
+    number < pivot ? left.push(number) : right.push(number)
+  }
+  return qSort(left).concat(pivot, qSort(right))
+}
+
+console.log(list);
+console.log(qSort(list));
+console.log(list);
+
+
+
