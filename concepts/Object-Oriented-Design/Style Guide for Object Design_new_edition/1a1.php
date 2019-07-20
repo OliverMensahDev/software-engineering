@@ -27,7 +27,7 @@ final class ModifierFormatter implements Formatter{
 
 final class FileLogger implements Logger{
 
-    private Formatter $formatter;
+    private  $formatter;
 
     public function __construct(Formatter $formatter){
         $this->formatter = $formatter;

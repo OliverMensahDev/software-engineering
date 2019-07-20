@@ -2,6 +2,7 @@ package hr.persistence;
 
 import hr.personnel.Employee;
 import hr.personnel.FullTimeEmployee;
+import hr.personnel.Intern;
 import hr.personnel.PartTimeEmployee;
 
 import java.io.IOException;
@@ -34,7 +35,9 @@ public class EmployeeRepository {
         Employee steve = new PartTimeEmployee("Steve Jones", 800);
         Employee magda = new PartTimeEmployee("Magda Iovan", 920);
 
-        return Arrays.asList(anna, billy, steve, magda);
+        Intern oliver = new Intern("Oliver Mensah", 400, 20);
+
+        return Arrays.asList(anna, billy, steve, magda, oliver);
     }
 
     public void save(Employee employee) throws IOException {
