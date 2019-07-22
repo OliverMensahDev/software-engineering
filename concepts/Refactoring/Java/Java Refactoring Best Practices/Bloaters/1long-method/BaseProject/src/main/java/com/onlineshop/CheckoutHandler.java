@@ -18,7 +18,6 @@ public class CheckoutHandler {
     private double sumItemPrices(List<Item> items){
         double baseTotal = 0;
 
-        // sum up the prices
         List<Double> prices = new ArrayList<>();
         for(Item item : items){
             prices.add(item.price());
@@ -30,6 +29,32 @@ public class CheckoutHandler {
         return baseTotal;
 
     }
+    //extract methods
+//    private double applyVoucher(String voucher, double price){
+//        if(voucher.equals("GIMME_DISCOUNT") || voucher.equals("CHEAPER_PLEASE")){
+//            price = BigDecimal.valueOf(price * 0.95).setScale(2, RoundingMode.HALF_EVEN).doubleValue();
+//        } else {
+//            System.out.println("Voucher invalid");
+//        }
+//        return price;
+//    }
+//
+//    private double addDeliveryFee(String membership, String address, double price){
+//        if(membership.equalsIgnoreCase("GOLD")){
+//            // do nothing
+//        } else {
+//            if(Pattern.matches(".*US.*", address)){
+//                System.out.println("Adding flat delivery fee of 5 USD");
+//                price = price + 5;
+//            } else {
+//                System.out.println("Adding flat global delivery fee of 10 USD");
+//                price = price + 10;
+//            }
+//        }
+//        return price;
+//    }
+
+    // decomposing conditionals
 
     private double applyVoucher(String voucher, double price){
         // check if voucher is valid
@@ -68,13 +93,13 @@ public class CheckoutHandler {
         return Pattern.matches(".*US.*", address);
     }
 
+
     public double calculateTotal(List<Item> items, String voucher, String membership, String address){
         double baseTotal = sumItemPrices(items);
         baseTotal = applyVoucher(voucher, baseTotal);
         baseTotal = addDeliveryFee(membership, address, baseTotal);
         return baseTotal;
     }
-
 
 
     public void setDeliveryTimeWindow(LocalDate deliveryStart, LocalDate deliveryEnd){

@@ -51,7 +51,5 @@ public class App {
         // final version
         window = deliveryTimeWindow().startInDays(1).endInDays(2);
         checkout.setDeliveryTimeWindow(window);
-
-
     }
 }

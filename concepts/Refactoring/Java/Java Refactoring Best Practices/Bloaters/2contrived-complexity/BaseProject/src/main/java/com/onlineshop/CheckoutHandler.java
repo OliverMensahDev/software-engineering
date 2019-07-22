@@ -65,8 +65,6 @@ public class CheckoutHandler {
         return baseTotal;
     }
 
-
-
     public void setDeliveryTimeWindow(LocalDate deliveryStart, LocalDate deliveryEnd){
         this.deliveryWindowStart = deliveryStart;
         this.deliveryWindowEnd = deliveryEnd;
