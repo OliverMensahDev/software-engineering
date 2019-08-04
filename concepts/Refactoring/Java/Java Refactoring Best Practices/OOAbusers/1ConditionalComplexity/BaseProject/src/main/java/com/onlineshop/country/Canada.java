@@ -15,8 +15,7 @@ public class Canada extends Country {
     }
 
     private static boolean liberalProvince(String province) {
-        return "Quebec".equalsIgnoreCase(province) ||
-                "Alberta".equalsIgnoreCase(province);
+        return "Quebec".equalsIgnoreCase(province) || "Alberta".equalsIgnoreCase(province);
     }
 
 

@@ -1,0 +1,8 @@
+npm run lint -- --init
+npm run lint 
+nodemon app.js
+
+mongo bookAPI < data.js
+
+
+execute test

@@ -2,36 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52d56685-818a-4a11-bf36-550f91dd3c6d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/BaseProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/out/production/main/com/onlineshop/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/out/production/main/com/onlineshop/CheckoutHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Cheese.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Chocolate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Milk.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Wine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/src/main/java/com/onlineshop/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/src/main/java/com/onlineshop/CheckoutHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/src/main/java/com/onlineshop/entities/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/src/main/java/com/onlineshop/items/Cheese.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/src/main/java/com/onlineshop/items/Chocolate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/src/main/java/com/onlineshop/items/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/src/main/java/com/onlineshop/items/Milk.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/src/main/java/com/onlineshop/items/Wine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/src/main/main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/src/test/java/test/CheckoutHandlerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../0BaseProject/BaseProject/src/test/test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../1long-method/BaseProject/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../1long-method/BaseProject/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../2contrived-complexity/BaseProject/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../2contrived-complexity/BaseProject/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../2contrived-complexity/BaseProject/src/main/java/com/onlineshop/CheckoutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2contrived-complexity/BaseProject/src/main/java/com/onlineshop/CheckoutHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3primitive-obsession/BaseProject/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../3primitive-obsession/BaseProject/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6Large-class/BaseProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../6Large-class/BaseProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6Large-class/BaseProject/src/main/java/com/onlineshop/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../6Large-class/BaseProject/src/main/java/com/onlineshop/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/onlineshop/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/com/onlineshop/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/onlineshop/CheckoutHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/com/onlineshop/CheckoutHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/country/Canada.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/country/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/country/France.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/country/Spain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/country/US.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/CustomerRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/DeliveryTimeWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/Membership.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/Voucher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/handlers/CheckoutHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/handlers/DeliveryManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/handlers/DiscountManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/handlers/SimpleCurrencyConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Cheese.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Chocolate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Milk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Wine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/src/main/main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/src/test/test.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,11 +45,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/CheckoutHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BaseProject.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="61" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -75,13 +84,6 @@
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="27" />
     <option name="width" value="1920" />
@@ -93,7 +95,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -109,16 +110,38 @@
             </path>
             <path>
               <item name="BaseProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BaseProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="BaseProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BaseProject" type="58d84e3e:PackageViewProjectNode" />
+              <item name="main" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="BaseProject" type="58d84e3e:PackageViewProjectNode" />
+              <item name="main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.onlineshop" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="BaseProject" type="58d84e3e:PackageViewProjectNode" />
+              <item name="main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.onlineshop" type="1f31426a:PackageElementNode" />
+              <item name="entities" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -130,6 +153,9 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../OOAbusers" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -167,8 +193,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26505375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26881722" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -200,7 +227,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/CheckoutHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -211,12 +238,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BaseProject.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="61" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

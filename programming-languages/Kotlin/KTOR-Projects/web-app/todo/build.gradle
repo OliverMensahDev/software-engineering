@@ -1,0 +1,36 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'application'
+
+group 'com.oliver'
+version '0.0.1'
+mainClassName = "io.ktor.server.netty.EngineMain"
+
+
+repositories {
+    mavenLocal()
+    jcenter()
+    maven { url 'https://kotlin.bintray.com/ktor' }
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile "io.ktor:ktor-server-netty:$ktor_version"
+    compile "ch.qos.logback:logback-classic:$logback_version"
+    compile "io.ktor:ktor-server-core:$ktor_version"
+    compile "io.ktor:ktor-mustache:$ktor_version"
+    compile "io.ktor:ktor-server-host-common:$ktor_version"
+    testCompile "io.ktor:ktor-server-tests:$ktor_version"
+    compile "com.fasterxml.jackson.core:jackson-databind:2.9.7"
+    compile "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.7"
+
+}

@@ -7,13 +7,10 @@ import com.onlineshop.entities.Order;
 import com.onlineshop.items.Cheese;
 import com.onlineshop.items.Chocolate;
 import com.onlineshop.items.Item;
-import com.sun.org.apache.xpath.internal.operations.Or;
 
-import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 
-import static java.time.LocalDate.now;
 
 public class App {
 

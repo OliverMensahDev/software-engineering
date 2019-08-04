@@ -1,0 +1,21 @@
+{
+  "name": "node-AuthZN",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.0.1",
+    "express": "~4.5.0",
+    "jsonwebtoken": "^7.4.1",
+    "mongoose": "^4.13.4"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "./node_modules/.bin/mocha"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "^11.2.1",
+    "supertest": "^3.0.0"
+  }
+}

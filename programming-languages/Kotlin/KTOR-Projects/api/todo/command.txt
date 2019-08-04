@@ -1,0 +1,7 @@
+curl -i -X POST -H "Content-Type: application/json" -d  @postrequest.json  http://0.0.0.0:8080/api/todos
+
+curl -i -X PUT -H "Content-Type: application/json" -d  @putrequest.json  http://0.0.0.0:8080/api/todos/3
+
+
+
+curl -i -X DELETE http://0.0.0.0:8080/api/todos/1

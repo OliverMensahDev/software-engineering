@@ -52,20 +52,16 @@ public class Order {
                 return false;
             }
         }
-
         return items.add(item);
     }
 
 
     private int getLegalAgeFor(Customer customer) {
         Country country = customer.getAddress().getCountry();
-
         if(country instanceof Canada){
             Canada canada = (Canada) country;
             return canada.getLegalDrinkingAge(customer.getAddress().getProvince());
         }
-
-
         return country.getMinimumLegalDrinkingAge();
     }
 

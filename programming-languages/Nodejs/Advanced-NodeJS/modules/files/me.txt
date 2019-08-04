@@ -1,0 +1,22 @@
+[Desktop Entry]
+Name=Robo3T
+Comment=Robo3T
+Exec=/opt/robo3t/bin %U
+Icon=/opt/robo3t/
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Network;Application;
+Name[en_US]=Robo3T
+
+[Desktop Entry]
+Name=Robo3T
+Comment=Robo3T
+Exec=/opt/robo3t/bin %U
+Icon=/opt/robo3t/
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Network;Application;
+Name[en_US]=Robo3T
+

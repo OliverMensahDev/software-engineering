@@ -46,7 +46,7 @@ function swap(arr, index1, index2) {
 }
 
 function selectionSort(){
-    var min,temp;
+    var min;
     for(var outer=0; outer<=this.dataStore.length-2; ++outer){
         min = outer;
         for(var inner = outer+1; inner<= this.dataStore.length-1; ++inner){
