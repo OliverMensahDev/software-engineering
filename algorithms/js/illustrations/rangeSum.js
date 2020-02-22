@@ -1,10 +1,12 @@
-function range(a,b)
+function range(a,b, interval)
 {
   var accumulator = [];
   if(a < b){
     while(a<=b){
       accumulator.push(a)
-      a++;
+      if(interval && interval > 1){
+        a = a + interval
+      }else a++
     }
     return accumulator;
   }else{
@@ -24,5 +26,5 @@ function sum(arr){
    console.log("Not valid range");
   }
 }
-console.log(range(10, 20));
+console.log(range(10, 20, -1));
 console.log(sum(range(10, 20)));

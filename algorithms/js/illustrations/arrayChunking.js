@@ -4,8 +4,7 @@ function chunkArray(arr, len){
     // set index
     let i = 0;
     while( i< arr.length){
-        dataStore[i] = arr.slice(i,  i+ len);
-        i += len;
+        dataStore[i] = arr.slice(i,  i += len);
     }
     return dataStore;
 }

@@ -38,4 +38,5 @@ dependencies {
     implementation("com.h2database:h2:1.4.191")
     implementation("joda-time:joda-time:2.9.2")
     implementation("io.ktor:ktor-jackson:$ktor_version")
+    implementation("io.ktor:ktor-auth-jwt:$ktor_version")
 }

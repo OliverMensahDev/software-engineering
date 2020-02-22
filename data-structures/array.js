@@ -23,7 +23,7 @@ class Arrays{
     delete(value){
         for(let i = 0; i < this.size; i++){
             if(this.dataStore[i] === value){
-                this.dataStore[i] = null;
+                delete this.dataStore[i];
                 this.counter--
             }
         }
@@ -41,6 +41,9 @@ class Arrays{
     toString(){
         return JSON.stringify(this.dataStore, null, 3)
     }
+    length(){
+        return this.counter;
+    }
 }
 
 let arr = new Arrays(3);
@@ -49,6 +52,6 @@ arr.insert(4);
 arr.insert(5);
 arr.traverse()
 arr.delete(5);
-arr.insert(6)
+// arr.insert(6)
 
-console.log(arr.toString())
+console.log(arr.length())

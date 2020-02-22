@@ -7,7 +7,7 @@ function eachWordCapitilize(str){
     }
     // return str.replace(/\b[a-z]/gi, function(char){
     //     return char.toUpperCase()
-    // })
+    // }) 
     return str 
         .toLowerCase()
         .split(' ')

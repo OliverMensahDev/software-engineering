@@ -31,7 +31,7 @@ class Fibber {
     if (n < 2) {
       return n;
     } else {
-      return fibSlow(n - 2) + fibSlow(n - 1);
+      return this.fibSlow(n - 2) + this.fibSlow(n - 1);
     }
   }
 

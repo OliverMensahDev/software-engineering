@@ -1,4 +1,6 @@
 <?php 
+//Before
+
 final class ApiClient
 {
   private $username;
@@ -10,6 +12,8 @@ final class ApiClient
   }
 }
 
+
+//After
 final class Credentials
 {
   private $username;

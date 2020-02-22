@@ -1,4 +1,6 @@
 function allDigitSum(num){
+ // Time: O(n)
+ // Extra Space: O(1 * n)
     let dataArray = num.toString().split('')
     return dataArray.reduce((prev, cur) => Number.parseInt(prev) + Number.parseInt(cur), 0)   
 }

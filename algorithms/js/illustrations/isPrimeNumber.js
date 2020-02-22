@@ -15,7 +15,7 @@ function isPrime(n){
 
 
 function prime(n){
-  if(n<= 1){
+  if(n <= 1){
     return false;
   }
   for(i = 2; i < n; i++){

@@ -16,6 +16,19 @@ function bracketMatch(text) {
     }
     return numToAdd;
   }
+
+  function bracketMatch(text){
+    let length = text.length;
+    let unMatched = 0
+    let mid = Math.floor(length/2);
+    if(length % 2 != 0) unMatched = 1;
+    for(i= 0;  i < mid ; i++){
+      length = length -1;
+      console.log("comparing ", text.charAt(i), text.charAt(length))
+      if(text.charAt(i) === text.charAt(length)) unMatched++;
+    }
+    return unMatched;
+  }
   
   console.log(bracketMatch('(()'));
   console.log(bracketMatch('(())'));

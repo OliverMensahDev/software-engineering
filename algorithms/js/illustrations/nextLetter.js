@@ -8,5 +8,5 @@ function letterChanges(str){
     });
 
 }
-console.log(letterChanges(""));
+console.log(letterChanges("a"));
 

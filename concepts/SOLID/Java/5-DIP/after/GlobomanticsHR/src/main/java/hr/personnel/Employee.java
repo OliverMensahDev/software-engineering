@@ -1,7 +1,7 @@
 package hr.personnel;
 
 /*
-Models an employee form a business perspective
+Models an employee from a business perspective
  */
 public abstract class Employee {
     private String firstName;

@@ -1,0 +1,21 @@
+{
+    "name": "devless/ems",
+    "authors": [
+        {
+            "name": "Oliver Mensah",
+            "email": "olivermensah96@gmail.com"
+        }
+    ],
+    "require": {
+        "google/protobuf": "^3.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "gen",
+            "App\\": "app/"
+        }
+    },
+    "scripts": {
+    	"gen-proto": "mkdir gen && protoc --php_out=./gen ./pb/messages.proto"
+    }
+}

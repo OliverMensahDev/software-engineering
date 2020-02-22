@@ -6,8 +6,7 @@ function reverseInt( int){
     if( typeof int !== 'number') {
         throw new Error("Must be a Number")
     }
-
-   return  parseInt(int.toString().split('').reverse().join(''))  * Math.sign(int)
+   return  Math.parseInt(int.toString().split('').reverse().join(''))  * Math.sign(int)
 }
 
 console.log(reverseInt(-123));

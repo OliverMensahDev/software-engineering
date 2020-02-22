@@ -31,9 +31,6 @@ public class TaxCalculatorModifySourceCode {
                 return  (monthlyIncome * INCOME_TAX_PERCENTAGE) / 100;
             }
         }
-        // Modify this method as more types of employees are added to the software.
-
-
         return 0;
     }
 }

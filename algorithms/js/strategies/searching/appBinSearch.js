@@ -39,4 +39,18 @@ function count(arr, data){
     return count
 }
 
-console.log(count([1,2,4,5,5,6,6,7,8],5))
+// console.log(count([1,2,4,5,5,6,6,7,8],5))
+
+function binary_search(items, key){
+    if (items == null)return null
+    let i = Math.floor(items.length / 2)
+    if (key == items[i])return items[i]
+    if (key > items[i])
+        sliced = items.slice(i+1,items.length)
+    else
+        sliced = items.slice(0, i-1)
+    return binary_search(sliced, key)
+}
+
+console.log(binSearch([1,2,4,5],5))
+
