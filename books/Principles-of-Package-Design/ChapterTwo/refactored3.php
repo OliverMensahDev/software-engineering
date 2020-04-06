@@ -9,17 +9,27 @@ interface EncoderInterface
 }
 class JsonEncoder implements EncoderInterface
 {
-  // ...
+  function encode($data): string
+  {
+    return $data . ".json";
+  }
 }
 
 class XmlEncoder implements EncoderInterface
 {
-  // ...
+  function encode($data): string
+  {
+    return $data . ".xml";
+  }
 }
 class YamlEncoder implements EncoderInterface
 {
-  // ...
+  function encode($data): string
+  {
+    return $data . ".yaml";
+  }
 }
+
 
 interface EncoderFactoryInterface
 {
@@ -44,6 +54,7 @@ class EncoderFactory implements EncoderFactoryInterface
   }
   public function createForFormat(string $format): EncoderInterface
   {
+    if(empty($this->factories[$format])) throw new InvalidArgumentException('Unknown format');
     $factory = $this->factories[$format];
     // the factory is a callable
     $encoder = $factory();
@@ -65,6 +76,23 @@ class GenericEncoder
     $data = $this->prepareData($data, $format);
     return $encoder->encode($data);
   }
+
+  private function prepareData($data, string $format)
+  {
+    switch ($format) {
+      case 'json':
+        // $data = $this->forceArray($data);
+        // $data = $this->fixKeys($data);
+      case 'xml':
+        // $data = $this->fixAttributes($data);
+        break;
+      default:
+        throw new InvalidArgumentException(
+          'Format not supported'
+        );
+    }
+    return $data;
+  }
 }
 
 $encoderFactory = new EncoderFactory();
@@ -80,6 +108,12 @@ $encoderFactory->addEncoderFactory(
     return new JsonEncoder();
   }
 );
-$genericEncoder = new GenericEncoder($encoderFactory);
-$data;
-$jsonEncodedData = $genericEncoder->encodeToFormat($data, 'json');
+
+try {
+  $genericEncoder = new GenericEncoder($encoderFactory);
+  $data ="come";
+  echo $genericEncoder->encodeToFormat($data, 'ppp');
+} catch (\Throwable $th) {
+  echo $th->getMessage();
+}
+

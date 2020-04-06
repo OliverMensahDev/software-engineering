@@ -9,23 +9,30 @@ interface EncoderInterface
 }
 class JsonEncoder implements EncoderInterface
 {
-  // ...
+  function encode($data): string
+  {
+    return $data . ".json";
+  }
 }
 
 class XmlEncoder implements EncoderInterface
 {
-  // ...
+  function encode($data): string
+  {
+    return $data . ".xml";
+  }
 }
 class YamlEncoder implements EncoderInterface
 {
-  // ...
+  function encode($data): string
+  {
+    return $data . ".yaml";
+  }
 }
 
 interface EncoderFactoryInterface
 {
-  public function createForFormat(
-    string $format
-  ): EncoderInterface;
+  public function createForFormat(string $format): EncoderInterface;
 }
 
 class EncoderFactory implements EncoderFactoryInterface
@@ -46,10 +53,8 @@ class MyCustomEncoderFactory implements EncoderFactoryInterface
 {
   private $fallbackFactory;
   private $serviceLocator;
-  public function __construct(
-    ServiceLocatorInterface $serviceLocator,
-    EncoderFactoryInterface $fallbackFactory
-  ) {
+  public function __construct(ServiceLocatorInterface $serviceLocator, EncoderFactoryInterface $fallbackFactory) 
+  {
     $this->serviceLocator = $serviceLocator;
     $this->fallbackFactory = $fallbackFactory;
   }
@@ -80,4 +85,4 @@ class GenericEncoder
 }
 
 
-$encoder = new GenericEncoder(new MyCustomEncoderFactory());
+$encoder = new GenericEncoder(new MyCustomEncoderFactory(,new EncoderFactory()));

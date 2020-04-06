@@ -9,16 +9,25 @@ interface EncoderInterface
 }
 class JsonEncoder implements EncoderInterface
 {
-  // ...
+  function encode($data): string
+  {
+    return $data . ".json";
+  }
 }
 
 class XmlEncoder implements EncoderInterface
 {
-  // ...
+  function encode($data): string
+  {
+    return $data . ".xml";
+  }
 }
 class YamlEncoder implements EncoderInterface
 {
-  // ...
+  function encode($data): string
+  {
+    return $data . ".yaml";
+  }
 }
 
 class EncoderFactory
@@ -43,9 +52,34 @@ class GenericEncoder
   }
   public function encodeToFormat($data, string $format): string
   {
-    $encoder = $this->encoderFactory
-      ->createForFormat($format);
-    $data = $this->prepareData($data, $format);
-    return $encoder->encode($data);
+    try {
+      $encoder = $this->encoderFactory
+        ->createForFormat($format);
+      $data = $this->prepareData($data, $format);
+      return $encoder->encode($data);
+    } catch (\Throwable $th) {
+      return $th->getMessage();
+    }
+  }
+
+  private function prepareData($data, string $format)
+  {
+    switch ($format) {
+      case 'json':
+        // $data = $this->forceArray($data);
+        // $data = $this->fixKeys($data);
+      case 'xml':
+        // $data = $this->fixAttributes($data);
+        break;
+      default:
+        throw new InvalidArgumentException(
+          'Format not supported'
+        );
+    }
+    return $data;
   }
 }
+
+
+$gen  = new GenericEncoder(new EncoderFactory());
+echo $gen->encodeToFormat("come", "json");
