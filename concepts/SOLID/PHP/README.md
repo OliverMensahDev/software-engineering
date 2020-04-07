@@ -405,4 +405,146 @@ interface InternationalMoneyTransferCapability
 {
     void processInternationalPayment(double amount)
 }
+```
+
+### Decoupling Components with Dependency Inversion Principle
+I think this is the most important principle among the SOLID  and allows creating systems that are loosely coupled, easier to change and maintain.
+The DIP states that
+1. High level modules should not depend on low level modules, both should depend on abstractions.
+2. Abstractions should not depend on details. Details should  depend on abstraction. 
+
+A whole lot of questions on the definition:
+1. High Level Modules: They are the part of applications that bring real value, modules written to solve real problems and use cases.  They are business logic; provides the features of the application. Tells what the software should do but not how they should do it. 
+EG: Payment, User Management,  
+2. Low Level Modules: implementation details require to execute business logic. They re the internal of a system, tells how the software should do various tasks.
+EG: Logging, Data Access, Network Communication, IO; 
+
+They are not absolute terms, they are relative to each other.
+
+3. Abstraction is something that is not concrete. Something that as developers we cannot "new" up. In Java applications, we tend to model abstractions using interfaces and abstract classes. 
+> Putting all together 
+A(H)-> Abs <- B(L)
+
+> Writing Code That Respects the DIP
+- Low Level Class
+-- Concrete data access class that uses SQL to return data from database
+```java
+class SqlProductRepo
+{
+  public Product getById(String productId)
+  {
+    //Grab product from SQL database
+  }
+}
+```
+
+- High Level
+-- High level(PaymentProcessor) class depends directly on low level(SqlProductRepo) as it news it up.
+```java
+class PaymentProcessor
+{
+  public void pay(String productId)
+  {
+    SqlProductRepo repo =  new SqlProductRepo();
+    Product  product = repo.getById(productId);
+    this.processPayment(product);
+  }
+}
+```
+
+- Abstract the dependency 
+-- Interface 
+```java
+interface ProductRepo
+{
+  Product getById(String productId)
+}
+
+class SqlProductRepo implements ProductRepo
+{
+  getById(String productId){
+    //concrete details for fetching the product
+  }
+}
+
+class ProductRepoFactory
+{
+  public static ProductRepo create(String type){
+    if(type.equals('mongo')){
+      return new MongoProductRepo();
+    }
+    return new SqlProductRepo();
+  }
+}
+class PaymentProcessor
+{
+  public void pay(String productId)
+  {
+    ProductRepo repo =  ProductFactory.create();
+    Product  product = repo.getById(productId);
+    this.processPayment(product);
+  }
+}
+```
+After implementing Dependency inversion, we had pretty much abstraction as dependency, however, there are still some coupling, this is where dependency injection comes in.
+
+> Dependency Injection
+A technique in which a component does not have to bear the responsibility of creating its one dependencies. 
+Simply, the technique that allows the creation of dependent objects outside of a class and provides those objects to a class. 
+There are several approaches of doing this. 
+1. Public setters
+2. Constructor Injection
+```java
+class PaymentProcessor
+{
+  public PaymentProcessor(ProductRepo $repo){
+    this.repo = repo;
+  }
+  public void pay(String productId)
+  {
+    Product  product = this.repo.getById(productId);
+    this.processPayment(product);
+  }
+}
+ProductRepo repo =  ProductFactory.create();
+PaymentProcessor paymentProc = new PaymentProcessor(repo)
+paymentProc.pay('123')
+```
+Manual DI is complex and hence we need a better  approach, which is the Inversion of Control (IoC) principle .
+
+> Inversion of Control (IoC)
+Helps to create large systems by taking away the responsibility of creating objects. 
+This is the design principle in which the control of object creation, configuration and life cycle is passed to a container or framework. The object creation, configuration and life-cycle is inverted from the programmer to the container.
+Eg. Spring Bean.
+
+>Recap: DIP, DI nd IoC
+
+> Demo: Applying the DIP 
+- Decoupling components
+- Improving testability
+* Payment Component
+Highly coupled with EmployeeFileRepository and EmailService
+In the constructor, it is creating its own dependencies.
+Also sendPayments method of the class is using static calls which is also another sign though we don't new up.
+Questions to ask while refactoring?
+1. What if a particular client does not want to read employees out of CSV file, what's going to happen if you want to read from SQL database?
+2. What happens if a particular client does not want employees receive emails but text messages or notifications?
+
+The way this component is coded makes it difficult to modify behaviour at runtime
+
+3. Testing is also affected. 
+The main goal is to test the payment class where  the total amount of service paid is equal to the sum of salaries of employees.  We don't care about where the employees are retrieved from, we don't care about how they are notified, these problems are caused by coupling
+
+- Fixed the Design with DIP 
+Right now our high level component which is PaymentProcessor  on low level module(Email, FileStorage). We need to break the dependency, both should  depend upon abstraction. 
+
+### Summary 
+Time to recap some few takeaways 
+1. Technical Debt: The silent killer of software projects
+2. Coupling: The main reason of technical Debt(Code Rigidity and Frigidity)
+3. SOLID: Tackling coupling and promote designs that evolve and grow over time
+The SOLID principles are the foundation of clean system design 
+4. Tools for writing clean code: Pyramid of clean code 
+* SOLID -> Design Pattern -> TDD -> Continuous refactoring
+*  Remember that you always have to pay your technical debt, otherwise, it will grow out of control and it will lead your project to a halt 
 
