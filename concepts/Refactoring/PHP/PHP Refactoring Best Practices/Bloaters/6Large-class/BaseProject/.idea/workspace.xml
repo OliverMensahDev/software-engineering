@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="18310adf-6e84-4b93-aa8f-62cc4bb98d23" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../BaseProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/.idea/libraries/org_testng_testng_6_14_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ChangePreventers/DivergentChange/BaseProject/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../0BaseProject/BaseProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../0BaseProject/BaseProject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../0BaseProject/BaseProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../0BaseProject/BaseProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../0BaseProject/BaseProject/out/production/main/com/onlineshop/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../0BaseProject/BaseProject/out/production/main/com/onlineshop/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../0BaseProject/BaseProject/out/production/main/com/onlineshop/CheckoutHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../0BaseProject/BaseProject/out/production/main/com/onlineshop/CheckoutHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3primitive-obsession/BaseProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../3primitive-obsession/BaseProject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3primitive-obsession/BaseProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../3primitive-obsession/BaseProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4Data-clumps/BaseProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../4Data-clumps/BaseProject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4Data-clumps/BaseProject/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../4Data-clumps/BaseProject/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4Data-clumps/BaseProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../4Data-clumps/BaseProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4Data-clumps/BaseProject/src/main/java/com/onlineshop/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../4Data-clumps/BaseProject/src/main/java/com/onlineshop/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5combine-entities/BaseProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../5combine-entities/BaseProject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5combine-entities/BaseProject/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../5combine-entities/BaseProject/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5combine-entities/BaseProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../5combine-entities/BaseProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/BaseProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/BaseProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/country/Canada.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/country/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/country/France.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/country/Spain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/country/US.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/CustomerRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/DeliveryTimeWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/Membership.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/entities/Voucher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/handlers/CheckoutHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/handlers/DeliveryManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/handlers/DiscountManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/handlers/SimpleCurrencyConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Cheese.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Chocolate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Milk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/out/production/main/com/onlineshop/items/Wine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/src/main/main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/src/test/java/test/CheckoutHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/src/test/java/test/CheckoutHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ChangePreventers/0BaseProject/BaseProject/src/test/test.iml" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="27" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectId" id="1OWR5jRxaUZjWbSMZO1MDBVQwSh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../OOAbusers/1ConditionalComplexity/BaseProject" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.onlineshop.App" />
+      <module name="main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18310adf-6e84-4b93-aa8f-62cc4bb98d23" name="Default Changelist" comment="" />
+      <created>1563647257906</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563647257906</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
