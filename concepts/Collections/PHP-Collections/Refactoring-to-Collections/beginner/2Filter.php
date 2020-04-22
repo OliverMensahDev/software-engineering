@@ -83,7 +83,7 @@ class FilterClass
             return $employee['employment'] == 'Part Time';
         });
 
-        $this->assertEquals([
+        assert([
             ['name' => 'John', 'department' => 'Sales', 'employment' => 'Part Time'],
             ['name' => 'Jane', 'department' => 'Marketing', 'employment' => 'Part Time'],
             ['name' => 'Beth', 'department' => 'Marketing', 'employment' => 'Part Time'],
@@ -111,7 +111,7 @@ class FilterClass
             return $product['stock_quantity'] > 0;
         });
 
-        $this->assertEquals([
+        assert([
             ['product' => 'Banana', 'stock_quantity' => 12],
             ['product' => 'Cream', 'stock_quantity' => 34],
             ['product' => 'Apple', 'stock_quantity' => 22],
@@ -139,7 +139,7 @@ class FilterClass
             return $city['population'] > 120000;
         });
 
-        $this->assertEquals([
+        assert([
             ['name' => 'Kitchener', 'population' => 204688],
             ['name' => 'London', 'population' => 366150],
             ['name' => 'Cambridge', 'population' => 120375],
@@ -150,7 +150,7 @@ class FilterClass
 $filter = new FilterClass();
 $filter->test_remove_odd_numbers();
 $filter->test_get_marketing_employees();
-$filter->test_products_that_are_out_of_stock();
+$filter->test_get_cities_with_more_than_120_000_people();
 
 
 

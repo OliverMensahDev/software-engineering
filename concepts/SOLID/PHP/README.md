@@ -294,6 +294,13 @@ class SchoolAccount implements LocalAccount
 - Type checking 
 Create a class for the checking object and override the default method.
 ```java
+// for(Task t : tasks){
+//   if(t instanceof BugFix){
+//     BugFix bf = (BugFix)t
+//     bf.initializeBugDescription()
+//   }
+//   t.setInProgress();
+// }
 class BugFix extends Task
 {
   @Override 

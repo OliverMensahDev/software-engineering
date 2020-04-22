@@ -101,7 +101,7 @@ class MapClass
 }
 
 
-$map = new Map();
+$map = new MapClass();
 $map->test_double_each_number();
 $map->test_get_user_emails();
 $map->test_convert_dates_to_day_of_week();

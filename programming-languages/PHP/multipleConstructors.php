@@ -23,8 +23,14 @@ class Student
         $this->lastName = $lastName;
         return $this;
     }
+
+    public function getName()
+    {
+        echo $this->firstName . " ". $this->lastName . "\n";
+    }
 }
 $student= Student::create()->setFirstName("John")->setLastName("Doe");
+$student->getName();
 
 //2 func_get_args
 class myClass {
@@ -35,6 +41,8 @@ class myClass {
       if (method_exists($this, $method_name = '__construct'.$number_of_arguments)) {
           call_user_func_array(array($this, $method_name), $get_arguments);
       }
+      echo "constructor with no parameter \n";
+
   }
 
   public function __construct1($argument1) {
@@ -49,38 +57,8 @@ class myClass {
       echo 'constructor with 3 parameter ' . $argument1 . ' ' . $argument2 . ' ' . $argument3 . "\n";
   }
 }
+$object = new myClass();
 $object1 = new myClass('BUET');
 $object2 = new myClass('BUET', 'is');
 $object3 = new myClass('BUET', 'is', 'Best.');
-
-
-//3 
-class Student
-{
-    public function __construct() {
-        // allocate your stuff
-    }
-
-    public static function withID( $id ) {
-        $instance = new self();
-        $instance->loadByID( $id );
-        return $instance;
-    }
-
-    public static function withRow( array $row ) {
-        $instance = new self();
-        $instance->fill( $row );
-        return $instance;
-    }
-
-    protected function loadByID( $id ) {
-        // do query
-        // $row = my_awesome_db_access_stuff( $id );
-        $this->fill( [] );
-    }
-
-    protected function fill( array $row ) {
-        // fill all properties from array
-    }
-}
 

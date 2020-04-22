@@ -1,0 +1,9 @@
+@startuml
+scale 2
+start
+:View;
+:Presentation;
+:Repository;
+:Service;
+stop
+@enduml
