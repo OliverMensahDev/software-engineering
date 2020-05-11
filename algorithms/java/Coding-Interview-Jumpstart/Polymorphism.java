@@ -1,8 +1,8 @@
 class Polymorphism{
   public static void main(String args[]){
-   Rectangle rec = new Rectangle(7, 3);
+   Shape rec = new Rectangle(7, 3);
    System.out.println(rec.calArea());
-   Circle cir = new Circle(7);
+   Shape cir = new Circle(7);
    System.out.println(cir.calArea());
   }
 }

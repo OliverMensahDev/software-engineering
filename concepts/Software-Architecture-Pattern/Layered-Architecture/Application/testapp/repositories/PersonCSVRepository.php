@@ -14,7 +14,7 @@ final class PersonCSVRepository implements IPerson
   public function getPeople(): array 
   {
     // open the CVS file
-    $handle = @fopen( $this->csvFile, "r");
+    $handle = fopen( $this->csvFile, "r");
     if ( !$handle ) {
         throw new \Exception( "Couldn't open $this->csvFile!" );
     }

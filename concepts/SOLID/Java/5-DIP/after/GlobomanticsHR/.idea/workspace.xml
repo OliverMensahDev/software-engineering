@@ -2,10 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="009a154c-6523-4c76-b0ef-15cc2d16e165" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../../Object-Oriented-Design/Style Guide for Object Design_new_edition/1a3.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Object-Oriented-Design/Style Guide for Object Design_new_edition/1a3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../../interview-Preps/microsoft/UniqueNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../interview-Preps/microsoft/UniqueNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../../programming-languages/Kotlin/KTOR-Projects/in-memory-persistence/rest-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../programming-languages/Kotlin/KTOR-Projects/in-memory-persistence/rest-api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../../programming-languages/PHP/nestedList.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../programming-languages/PHP/nestedList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DI/container.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DI/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DI/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../DI/user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Software-Architecture-Pattern/Layered-Architecture/Application/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Software-Architecture-Pattern/Layered-Architecture/Application/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Software-Architecture-Pattern/Layered-Architecture/Application/testapp/repositories/PersonCSVRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Software-Architecture-Pattern/Layered-Architecture/Application/testapp/repositories/PersonCSVRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Software-Architecture-Pattern/Layered-Architecture/Application/testapp/services/PersonService.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Software-Architecture-Pattern/Layered-Architecture/Application/testapp/services/PersonService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/pluralsightcleancode.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m10maintainingcleancode/BadCodeSnippets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m3naming/ClientDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m3naming/NumberUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m3naming/StringUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m3naming/TimeUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m3naming/WebHttpClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m4constructors/BankAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m4constructors/BankAccount2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m4constructors/Module3Demo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m4constructors/pizzaexample/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m4constructors/pizzaexample/Pizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m5methods/ComplexConditional.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m5methods/FailFast.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m5methods/MethodWithTooManyArguments.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m5methods/MethodWithTooManyArguments2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m5methods/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m5methods/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m5methods/ReturnEarly.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m6exceptions/ExceptionHandling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m6exceptions/ExceptionInFinallyBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m6exceptions/IllegalAgeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m6exceptions/MultipleExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m7classes/CouplingExample1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m7classes/CouplingExample2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m7classes/ProximityRule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m8comments/JavaDoc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/main/java/m9tests/TestExamples.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/test/java/dump/CommonManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/test/java/dump/CommonUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../java-writing-readable-maintainable-code/src/test/java/dump/UtilsDemo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,20 +67,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../.." />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1Q3oMSLubrWcWNPGIgkOEo8CEw1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -46,7 +80,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560761639680" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Writing-Readable-Maintainable-Code/Java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -91,18 +125,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -145,13 +167,18 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="254" width="530" height="605" key="FileChooserDialogImpl" timestamp="1588150512617">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="690" y="254" width="530" height="605" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1588150512617" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

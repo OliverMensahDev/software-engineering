@@ -3,6 +3,7 @@ namespace testapp\services;
 
 use App\Shared\Person;
 use testapp\datastores\Data;
+use testapp\sharedObjects\Person as SharedObjectsPerson;
 
 final class PersonService
 {
@@ -11,7 +12,9 @@ final class PersonService
     return Data::retrieve();
   }
 
-  public function addPerson(Person $newPerson)
+  public function addPerson(SharedObjectsPerson
+  
+  $newPerson)
   {
     $dataStore[] = $newPerson;
   }

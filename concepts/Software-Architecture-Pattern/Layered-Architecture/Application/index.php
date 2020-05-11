@@ -14,9 +14,9 @@ use testapp\sharedObjects\Person;
 
 
 $userModel = new UserModel(new PersonRepository);
-$userModel = new UserModel(new PersonCSVRepository("./dataPHP.csv"));
-$database =  new Database();
-$userModel = new UserModel(new PersonSQLRepository($database->get()));
+// $userModel = new UserModel(new PersonCSVRepository("./dataPHP.csv"));
+// $database =  new Database();
+// $userModel = new UserModel(new PersonSQLRepository($database->get()));
 //caching
 // $cache = new CachingRepository(new PersonRepository);
 // $userModel = new UserModel($cache);
@@ -34,3 +34,5 @@ $indexPage->people = $userModel->getPeople();
 
 
 echo $indexPage;
+
+

@@ -1,10 +1,10 @@
 function chunkArray(arr, len){
     
-    const dataStore = {}
+    const dataStore = []
     // set index
     let i = 0;
-    while( i< arr.length){
-        dataStore[i] = arr.slice(i,  i += len);
+    while( i < arr.length){
+        dataStore.push(arr.slice(i,  i += len));
     }
     return dataStore;
 }
