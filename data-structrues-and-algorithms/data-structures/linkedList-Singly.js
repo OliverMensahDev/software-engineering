@@ -10,8 +10,8 @@ class SinglyLinkedList {
         this.tail = null;
     }
     addTohead(val){
+        let newNode = new Node(val,null);
         if(!this.head){
-            let newNode = new Node(val,null);
             this.head = newNode;
             this.tail = newNode
         }else{
