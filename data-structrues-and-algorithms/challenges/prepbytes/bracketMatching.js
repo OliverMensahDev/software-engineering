@@ -1,21 +1,16 @@
 function isValid(code) {
-  const openersToClosers = {
-    "(": ")",
-    "[": "]",
-    "{": "}"
-  };
-  let length = code.length;
-  if (length % 2 != 0) return false;
-  let mid = Math.floor(length / 2);
-  for (let i = 0; i <= mid; i++) {
-    if (openersToClosers[code.charAt(i)] != code.charAt( i + 1)) {
-      if (openersToClosers[code.charAt(i)] != code.charAt(length - i - 1))
-        return false;
-    }else{
-      i++
+  let stack = [];
+  const OPENINGS = '{([';
+  const CLOSINGS = '})]';
+  for (let i = 0; i < code.length; i++) {
+    let letter = code.charAt(i);
+    if (OPENINGS.includes(letter)) stack.push(letter);
+    else if (CLOSINGS.includes(letter)) {
+      if (stack.length === 0) return false;
+      let top = stack[stack.length - 1];
+      if (OPENINGS.indexOf(top) === CLOSINGS.indexOf(letter)) stack.pop();
     }
   }
-  return true;
+  return stack.length === 0;
 }
-
-console.log(isValid("({[][]})"));
+console.log(isValid('{)[]()'));
