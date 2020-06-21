@@ -58,3 +58,45 @@
   Listing 2.39 Public methods for entry points, private ones for dependencies
 
 
+3.1 Require the minimum amount of data needed
+to behave consistently
+  Listing 3.1 The Position class
+  Listing 3.2 Position has required constructor arguments for x and y
+
+3.2 Require data that is meaningful
+  Listing 3.3 The Coordinates class
+  Listing 3.4 Verifying the domain invariants of Coordinates
+  Listing 3.5 Throwing exceptions for invalid constructor arguments
+  Listing 3.6 The ReservationRequest class
+  Listing 3.7 Validating the meaningfulness of constructor arguments
+  Listing 3.8 The Deal class
+  Listing 3.9 Deal validates the sum of the amounts for both parties
+  Listing 3.10 Removing the superfluous constructor argument
+  Listing 3.11 The Line class
+  Listing 3.12 Line now offers different ways for lines to be constructed
+
+
+3.3 Don’t use custom exception classes for invalid argument exceptions
+  Listing 3.13 SpecificException can be caught and dealt with
+
+3.4 Test for specific invalid argument exceptions by analyzing the exception’s message
+  Listing 3.14 The Coordinates class
+  Listing 3.15 Tests for the domain invariants of Coordinates
+  Listing 3.16 Verifying that the exception message contains a specific string
+
+3.5 Extract new objects to prevent domain invariants from being verified in multiple places
+  Listing 3.17 The User class
+  Listing 3.18 The EmailAddress class
+3.6 Extract new objects to represent composite values
+  Listing 3.19 Amount and Currency
+
+3.7 Use assertions to validate constructor arguments
+
+3.8 Don’t inject dependencies; optionally pass them as method arguments
+  Listing 3.23 Money needs the ExchangeRateProvider service
+  Listing 3.24 Alternative implementation: don’t pass ExchangeRateProvider
+  Listing 3.25 Passing ExchangeRate instead of ExchangeRateProvider
+  Listing 3.26 Alternative implementation: ExchangeService does all the work
+
+3.9 Use named constructors
+  Listing 3.27 The Date class wraps a date string

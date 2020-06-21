@@ -1,13 +1,16 @@
-<?php 
-final class Date{
+<?php
+final class Date
+{
   private const FORMAT = "d/m/Y";
   private $date;
 
-  private function __construct(){
+  private function __construct()
+  {
     //do nothing here
   }
 
-  public static function fromString(string $date): Date{
+  public static function fromString(string $date): Date
+  {
     $object = new self();
     $dateTimeImmutable = DateTimeImmutable::createFromFormat(
       self::FORMAT,

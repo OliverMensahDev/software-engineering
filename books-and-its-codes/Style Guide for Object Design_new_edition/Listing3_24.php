@@ -1,7 +1,7 @@
 <?php
 final class ExchangeRate
 {
-  public function __construct(Currency $from,Currency $to,Rate $rate) {
+  public function __construct(Currency $from,Currency $to, Rate $rate) {
     // ...
   }
   public function convert(Amount $amount): Money
