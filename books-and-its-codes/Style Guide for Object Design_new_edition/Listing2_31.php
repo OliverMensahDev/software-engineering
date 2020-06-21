@@ -12,12 +12,6 @@ final class FileLogger{
       * properly set up for us, so all we do here is a "sanity
       * check":
       */
-      if (!is_writable($logFilePath)) {
-          throw new InvalidArgumentException(sprintf(
-              'Log file path "%s" should be writable',
-              $logFilePath
-          ));
-      }
       $this->logFilePath = $logFilePath;
   }   
   public function log(string $message): void{

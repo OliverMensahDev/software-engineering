@@ -1,147 +1,60 @@
-1.1(a) Inject dependencies and configuration values as
-constructor arguments
+2.2 Inject dependencies and configuration values as constructor arguments
+  Listing 2.1 The FileLogger service
+  Listing 2.2 FileLogger has a dependency and needs a configuration value
+  Listing 2.3 Using separate constructor arguments for username and password
+  Listing 2.4 Username and password are now together in a Credentials object
 
-1.2(b) Inject what you need, not where you can get it from
+2.3 Inject what you need, not where you can get it from
+  Listing 2.5 A simplified implementation of a service locator
+  Listing 2.6 Using a ServiceLocator to retrieve dependencies
+  Listing 2.7 Injecting the actual dependencies as constructor arguments
+  Listing 2.8 The actual dependency is UserRepository, not EntityManager
 
-1.3(c) All constructor arguments should be required
+2.4 All constructor arguments should be required
+  Listing 2.9 Logger as an optional constructor argument
+  Listing 2.10 The client doesn’t have to provide a value for logFilePath
+  Listing 2.11 The default value for logFilePath is hidden in log()
 
-1.4(d) Only use constructor injection
+2.5 Only use constructor injection
+  Listing 2.12 A Logger can be provided later by calling setLogger ()
 
+2.6 There’s no such thing as an optional dependency
+  Listing 2.13 An implementation of the Logger interface that does nothing
+  Listing 2.14 A default Configuration object can easily be obtained
 
-1.5(e) There’s no such thing as an optional dependency
+2.7 Make all dependencies explicit
+  Listing 2.15 Inject a Cache instance instead of using its static methods
+  Listing 2.16 JsonEncoder wraps the json_encode() call
+  Listing 2.17 MeetupRepository depends on the current time
+  Listing 2.18 Clock can be used to retrieve the current time
+  Listing 2.19 A Clock implementation where time is fixed
+  Listing 2.20 You can also pass the current time as a method argument
+2.8 Task-relevant data should be passed as method arguments instead of constructor arguments
+  Listing 2.21 An EntityManager that can only be used to save a single object
+  Listing 2.22 ContactRepository depends on a Session object
+  Listing 2.23 entity should be a method argument
+  Listing 2.24 UserId and CompanyId should be passed as method arguments
 
-1.6(f) Make all dependencies explicit
-Turn static dependencies into object dependencies
-Turn complicated functions into object dependencies
-Make system calls explicit
+2.9 Don’t allow the behavior of a service to change after it has been instantiated
+  Listing 2.25 Calling ignoreErrors() changes the behavior of Importer
+  Listing 2.26 The behavior of EventDispatcher can change after instantiation
+  Listing 2.27 Listeners can only be configured at construction time
 
-1.7(g) Data relevant for the task should be passed as method
-arguments instead of constructor arguments
+2.10 Do nothing inside a constructor, only assign properties
+  Listing 2.28 FileLogger creates a log file directory if necessary
+  Listing 2.29 The constructor of FileLogger doesn’t create the directory
+  Listing 2.30 The LoggerFactory will create the log file directory
+  Listing 2.31 LoggerFactory takes care of everything FileLogger needs
+  Listing 2.32 Mailer does something inside its constructor
+  Listing 2.33 Changing the order of assignments in the Mailer constructor
 
-1.8(h) Don’t allow the behavior of a service to change after it has
-been instantiated
-
-1.9(i) Do nothing inside a constructor, only assign properties
-
-1.10(j) Throw an exception when an argument is invalid
-
-1.11(k) Define services as an immutable object graph with only a
-few entry points
-
-2.1(a) Require the minimum amount of data needed to behave
-consistently
-2.2 Require data that is meaningful
-2.3 Don’t use custom exception classes for invalid argument
-exceptions
-2.4 Extract new objects to prevent domain invariants from
-being verified in multiple places
-2.5 Extract new objects to represent composite values
-2.6 Use assertions to validate constructor arguments
-2.7 Don’t inject dependencies, optionally pass them as
-method arguments
-2.8 Use named constructors
-Create from primitive type values
-Don’t immediately add toString(), toInt(), etc.
-Introduce a domain-specific concept
-Optionally use the private constructor to enforce constraints
-2.9 Don’t use property fillers
-2.10 Don’t put anything more into an object than it needs
-2.11 Don’t test constructors
-2.12 The exception to the rule: Data transfer objects{#the-exception-to-the-rules:-data-transfer-objects}
-Use public properties
-Don’t throw exceptions, collect validation errors
-Use property fillers when needed
+2.11 Throw an exception when an argument is invalid
+  Listing 2.34 Alerting requires an int constructor argument
+  Listing 2.35 Validate a constructor argument before assigning it
+  Listing 2.36 Router doesn’t throw an exception
+  Listing 2.37 Router should validate the controllers array
+  Listing 2.38 An alternative for validating the controllers array
+2.12 Define services as an immutable object graph with only a few entry points
+  Listing 2.39 Public methods for entry points, private ones for dependencies
 
 
-3. Manipulating objects
-Entities: identifiable objects which track changes and record events
-Value objects: replaceable, anonymous, and immutable values
-Data transfer objects: simple objects with fewer design rules
-3.1 Prefer immutable objects
-Replace values instead of modifying them
-3.2 A modifier on an immutable object should return a
-modified copy
-3.3 On a mutable object, modifier methods should be
-command methods
-3.4 On an immutable object, modifier methods should have
-declarative names
-3.5 Compare whole objects
-3.6 When comparing immutable objects, assert equality, not
-sameness
-3.7 Calling a modifier method should always result in a valid
-object
-3.8 A modifier method should verify that the requested state
-change is valid
-3.9 Use internally recorded events to verify changes on
-mutable objects
-3.10 Don’t implement fluent interfaces on mutable objects
-A third-party library has some object design issues, what do
-I do?
-
-4. A template for implementing methods
-4.1 Pre-condition checks
-Introduce new types to get rid of pre-condition checks
-4.2 Failure scenarios
-4.3 Happy path
-4.4 Post-condition checks
-4.5 Return value
-4.6 Some rules for exceptions
-Use custom exception classes only if needed
-Naming invalid argument or logic exception classes
-Naming runtime exception classes
-Use named constructors to indicate reasons for failure
-Add detailed messages
-
-5. Retrieving information
-5.1 Use query methods for information retrieval
-Is a modifier method a command or a query method?
-5.2 Query methods should have single-type return values
-Show the uncertainty in the name of the method
-5.3 Avoid query methods that expose internal state
-How do you handle ambiguous naming?
-A naming convention for getters
-5.4 Define specific methods and return types for the queries
-you want to make
-5.5 Define an abstraction for queries that cross system
-boundaries
-Not every question deserves its own service
-5.6 Use stubs for test doubles with query methods
-Naming test methods
-Don’t use mocking tools for creating fakes and stubs
-5.7 Query methods should use other query methods, no
-command methods
-
-6. Performing tasks
-6.1 Use command methods with a name in the imperative form
-6.2 Limit the scope of a command method, use events to
-perform secondary tasks
-6.3 Make services immutable from the outside as well as on
-the inside
-Immutable services and service containers
-6.4 When something goes wrong, throw an exception
-6.5 Use queries to collect information, commands to take the
-next steps
-6.6 Define an abstraction for commands that cross system
-boundaries
-6.7 Only verify calls to command methods with a mock
-
-7. Dividing responsibilities
-7.1 Separate write models from read models
-7.2 Create read models that are specific for their use cases
-Build read models from domain events
-What about event sourcing?
-
-8. Changing the behavior of services
-8.1 Introduce constructor arguments to make behavior
-configurable
-8.2 Introduce constructor arguments to make behavior
-replaceable
-8.3 Compose abstractions to achieve more complicated
-behavior
-8.4 Decorate existing behavior
-8.5 Use notification objects or event listeners for additional
-behavior
-8.6 Don’t use inheritance to change an object’s behavior
-When is it okay to use inheritance?
-8.7 Mark classes as final by default
-8.8 Mark methods and properties private by default

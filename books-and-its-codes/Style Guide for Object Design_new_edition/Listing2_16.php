@@ -1,17 +1,17 @@
 <?php 
 
-// //Before
-// final class ConfigWriter {
-//     public function write(array $config, string $targetFilePath): void {
-//         // json_encode() is a hidden dependency:
-//         file_put_contents(
-//             $targetFilePath,
-//             json_encode($config)
-//         );
-//     }
-// }
-// $writer = new ConfigWriter();
-// $writer->write(array("me", "u"), "/home/olivermensah/Desktop/daily-practices/OD/logs/config.txt");
+//Before
+final class ConfigWriter {
+    public function write(array $config, string $targetFilePath): void {
+        // json_encode() is a hidden dependency:
+        file_put_contents(
+            $targetFilePath,
+            json_encode($config)
+        );
+    }
+}
+$writer = new ConfigWriter();
+$writer->write(array("me", "u"), "/home/olivermensah/Desktop/daily-practices/OD/logs/config.txt");
 
 
 
@@ -32,7 +32,7 @@ final class JsonEncoder{
     }
 }
 
-final class ConfigWriter{
+final class ConfigWriter1{
     // private JsonEncoder $jsonEncoder;
     public function __construct(JsonEncoder $jsonEncoder){
         /*
@@ -49,5 +49,5 @@ final class ConfigWriter{
     }
 }
 
-$writer = new ConfigWriter(new JsonEncoder());
+$writer = new ConfigWriter1(new JsonEncoder());
 $writer->write(array("another", "hereu"), "/home/olivermensah/Desktop/daily-practices/OD/logs/config.txt");

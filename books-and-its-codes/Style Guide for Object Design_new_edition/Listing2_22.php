@@ -1,5 +1,5 @@
 <?php 
-final class Addressbook {
+final class ContactRepository {
   private $session;
   public function __construct(Session $session){
     $this->session = $session;

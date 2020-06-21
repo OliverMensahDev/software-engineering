@@ -59,7 +59,7 @@ final class HomepageController {
         */
         $this->locator = $locator;
     }
-    public function __invoke(Request $request): Response {
+    public function execute(Request $request): Response {
         $user = $this->locator->get(EntityManager::class)
             ->getRepository(User::class)
             ->findOneBy($request->get('userId'));
@@ -81,21 +81,4 @@ final class HomepageController {
 }
 
 $data = new HomepageController(new ServiceLocator());
-echo $data->sendData();
-
-
-
-//Injecting what you need to get them from service. 
-final class FileController {
-
-    public function __construct(FileLogger $fileLogger){
-        $this->fileLogger = $fileLogger;
-    }
-
-    public function sendData(): string{
-        return $this->fileLogger->log("Oliver");
-    }
-}
-$locator = new ServiceLocator();
-$data = new FileController($locator->get(FileLogger::class));
 echo $data->sendData();

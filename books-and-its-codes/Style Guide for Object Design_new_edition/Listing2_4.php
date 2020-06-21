@@ -1,34 +1,19 @@
-<?php 
-//Before
-
-final class ApiClient
-{
-  private $username;
-  private $password;
-  public function __construct(string $username, string $password)
-  {
-    $this->username = $username;
-    $this->password = $password;
-  }
-}
-
-
-//After
+<?php
 final class Credentials
 {
   private $username;
   private $password;
   public function __construct(string $username, string $password)
   {
-    if ($username.isEmpty()) {
+    if (empty($username)) {
       throw new InvalidArgumentException(
-          'username cannot be empty'
+        'username cannot be empty'
       );
     }
     $this->username = $username;
-    if ($password.isEmpty()) {
+    if (empty($password)) {
       throw new InvalidArgumentException(
-          'password cannot be empty'
+        'password cannot be empty'
       );
     }
     $this->password = $password;
@@ -37,7 +22,7 @@ final class Credentials
   {
     return $this->username;
   }
-    public function password(): string
+  public function password(): string
   {
     return $this->password;
   }
