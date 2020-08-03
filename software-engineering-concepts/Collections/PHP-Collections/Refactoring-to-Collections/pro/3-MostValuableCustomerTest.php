@@ -5,7 +5,7 @@ class MostValuableCustomerTest
     private function map($items, $callback)
     {
         $result = [];
-        foreach($items as $item){
+        foreach ($items as $item) {
             $result[] = $callback($item);
         }
         return $result;
@@ -14,15 +14,15 @@ class MostValuableCustomerTest
     private function filter($items, $callback)
     {
         $result = [];
-        foreach($items as $item){
-            if($callback($item)){
+        foreach ($items as $item) {
+            if ($callback($item)) {
                 $result[] = $item;
             }
         }
         return $result;
     }
-    
-    private function reduce($items, $callback, $initial)
+
+    private function reduce($items, $callback, $initial = null)
     {
         $accumulator = $initial;
         foreach ($items as $item) {
@@ -94,25 +94,16 @@ class MostValuableCustomerTest
         //     }
         // }
 
-         
-        $sales = $this->reduce($employees, function($acc, $cur){
+
+        $sales = $this->reduce($employees, function ($acc, $cur) {
             return array_merge($acc, $cur['sales']);
         }, []);
-        $max = 0;
-        $customer;
-        foreach($sales as $sale){
-            if($sale['order_total'] > $max){
-                $max = $sale['order_total'];
-                $customer = $sale['customer'];
-            }
-        }
 
-       
-        echo json_encode(['Customer'=> $customer, "Total Order" => $max]);
+        $max = $this->reduce($sales, function ($prev, $current) {
+            return ($prev['order_total'] > $current['order_total']) ? $prev : $current;
+        });
+        echo $max['customer'];
     }
 }
-
-
-
 $a = new MostValuableCustomerTest();
 $a->test();

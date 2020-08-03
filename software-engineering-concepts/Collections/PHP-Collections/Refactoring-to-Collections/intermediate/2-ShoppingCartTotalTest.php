@@ -6,7 +6,7 @@ class ShoppingCartTotalTest
     {
         $result = [];
 
-        foreach($data as $singleData){
+        foreach ($data as $singleData) {
             $result[] = $callback($singleData);
         }
         return $result;
@@ -15,8 +15,8 @@ class ShoppingCartTotalTest
     private function filter($items, $callback)
     {
         $result = [];
-        foreach($items as $item){
-            if($callback($item)){
+        foreach ($items as $item) {
+            if ($callback($item)) {
                 $result[] = $item;
             }
         }
@@ -42,13 +42,8 @@ class ShoppingCartTotalTest
             ['product' => 'Apple',   'unit_price' => 76,   'quantity' => 6],
             ['product' => 'Bread',   'unit_price' => 229,  'quantity' => 2],
         ];
-
-        $totalPriceArray = $this->map($shoppingCart, function ($item) {
-            return $item['unit_price'] * $item['quantity'];
-        });
-
-        $sum = $this->reduce($totalPriceArray, function($acc, $cur){
-            return $acc + $cur;
+        $sum = $this->reduce($shoppingCart, function ($acc, $item) {
+            return $acc + ($item['unit_price'] * $item['quantity']);
         }, 0);
 
         return $sum;
@@ -57,5 +52,3 @@ class ShoppingCartTotalTest
 
 $shoppingCart = new ShoppingCartTotalTest();
 echo $shoppingCart->sum();
-
-
