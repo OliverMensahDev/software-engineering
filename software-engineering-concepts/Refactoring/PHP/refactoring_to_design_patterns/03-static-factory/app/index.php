@@ -10,5 +10,7 @@ use App\Search\WebServiceDefinitionSearch;
 include "./vendor/autoload.php";
 
 $dictionary = Dictionary::english();
-$definitions = $dictionary->getDefinitions("hello");
+
+$dictionary = Dictionary::fromLocalFile();
+$definitions = $dictionary->getDefinitions("book");
 print_r($definitions);
