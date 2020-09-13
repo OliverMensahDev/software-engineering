@@ -22,7 +22,7 @@ class WebServiceDefinitionSearch implements DefinitionSearch
 
   public function getDefinition(string $word): array
   {
-    $response = $this->httpHelper->sendGet(self::URL . $this->language . "/" . $word);
+    $response = $this->httpHelper->sendGet(self::URL . $this->language->toString() . "/" . $word);
     return DictionaryJSONResponseHelper::extractMeaning($response);
   }
 }
