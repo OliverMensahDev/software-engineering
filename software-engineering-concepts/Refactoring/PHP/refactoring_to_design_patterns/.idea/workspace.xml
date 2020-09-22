@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e5bd937-560d-445b-a66c-ec0dd4d24238" name="Default Changelist" comment="" />
+    <list default="true" id="7e5bd937-560d-445b-a66c-ec0dd4d24238" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,12 +25,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/04-dedicated-factory" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/04-dedicated-factory/classic" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/04-dedicated-factory/classic" />
       <recent name="$PROJECT_DIR$/04-dedicated-factory" />
       <recent name="$PROJECT_DIR$/04-dedicated-factory/parameterized" />
       <recent name="$PROJECT_DIR$/03-static-factory/cache-with-singleton" />
@@ -45,7 +48,9 @@
       <updated>1599974052326</updated>
       <workItem from="1599974053370" duration="12602000" />
       <workItem from="1600063250877" duration="15000" />
-      <workItem from="1600582672243" duration="6190000" />
+      <workItem from="1600582672243" duration="7812000" />
+      <workItem from="1600616506314" duration="698000" />
+      <workItem from="1600803143357" duration="1459000" />
     </task>
     <servers />
   </component>
@@ -53,17 +58,17 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="694" y="160" width="522" height="794" key="#com.intellij.ide.util.MemberChooser" timestamp="1600584886901">
+    <state x="694" y="160" width="522" height="801" key="#com.intellij.ide.util.MemberChooser" timestamp="1600803526370">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="694" y="160" width="522" height="794" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1600584886901" />
+    <state x="694" y="160" width="522" height="801" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1600803526370" />
     <state x="567" y="68" width="766" height="984" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600584693878">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="567" y="68" width="766" height="984" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1600584693878" />
-    <state x="0" y="212" width="1920" height="697" key="NewPhpClassDialog" timestamp="1600584949935">
+    <state x="0" y="212" width="1920" height="697" key="NewPhpClassDialog" timestamp="1600803480074">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="0" y="212" width="1920" height="697" key="NewPhpClassDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1600584949935" />
+    <state x="0" y="212" width="1920" height="697" key="NewPhpClassDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1600803480074" />
   </component>
 </project>
