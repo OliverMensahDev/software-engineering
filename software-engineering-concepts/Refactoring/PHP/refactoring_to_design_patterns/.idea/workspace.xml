@@ -3,6 +3,102 @@
   <component name="ChangeListManager">
     <list default="true" id="7e5bd937-560d-445b-a66c-ec0dd4d24238" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-noConstructorArgs/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/01-noConstructorArgs/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-noConstructorArgs/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/01-noConstructorArgs/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-noConstructorArgs/app/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/01-noConstructorArgs/app/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-noConstructorArgs/app/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/01-noConstructorArgs/app/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-noConstructorArgs/app/src/Dictionary/Dictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/01-noConstructorArgs/app/src/Dictionary/Dictionary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-noConstructorArgs/app/src/Helpers/DictionaryJSONResponseHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/01-noConstructorArgs/app/src/Helpers/DictionaryJSONResponseHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-noConstructorArgs/app/src/Helpers/HttpHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/01-noConstructorArgs/app/src/Helpers/HttpHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-noConstructorArgs/app/src/Search/DefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/01-noConstructorArgs/app/src/Search/DefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-noConstructorArgs/app/src/Search/WebServiceDefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/01-noConstructorArgs/app/src/Search/WebServiceDefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-noConstructorArgs/app/test/unit/src/Dictionary/DictionaryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/01-noConstructorArgs/app/test/unit/src/Dictionary/DictionaryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-constructorArgs/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/02-constructorArgs/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-constructorArgs/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/02-constructorArgs/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-constructorArgs/app/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/02-constructorArgs/app/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-constructorArgs/app/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/02-constructorArgs/app/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-constructorArgs/app/src/Dictionary/Dictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/02-constructorArgs/app/src/Dictionary/Dictionary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-constructorArgs/app/src/Dictionary/Language.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/02-constructorArgs/app/src/Dictionary/Language.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-constructorArgs/app/src/Helpers/DictionaryJSONResponseHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/02-constructorArgs/app/src/Helpers/DictionaryJSONResponseHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-constructorArgs/app/src/Helpers/HttpHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/02-constructorArgs/app/src/Helpers/HttpHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-constructorArgs/app/src/Search/DefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/02-constructorArgs/app/src/Search/DefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-constructorArgs/app/src/Search/WebServiceDefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/02-constructorArgs/app/src/Search/WebServiceDefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-constructorArgs/app/test/unit/src/Dictionary/DictionaryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/02-constructorArgs/app/test/unit/src/Dictionary/DictionaryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/app/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/app/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/app/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/app/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/app/src/Dictionary/Dictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/app/src/Dictionary/Dictionary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/app/src/Dictionary/Language.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/app/src/Dictionary/Language.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/app/src/Helpers/DictionaryJSONResponseHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/app/src/Helpers/DictionaryJSONResponseHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/app/src/Helpers/HttpHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/app/src/Helpers/HttpHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/app/src/Search/DefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/app/src/Search/DefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/app/src/Search/LocalBackupDefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/app/src/Search/LocalBackupDefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/app/src/Search/WebServiceDefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/app/src/Search/WebServiceDefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/app/src/Search/backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/app/src/Search/backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/app/test/unit/src/Dictionary/DictionaryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/app/test/unit/src/Dictionary/DictionaryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/cache-with-singleton/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/cache-with-singleton/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/cache-with-singleton/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/cache-with-singleton/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/cache-with-singleton/app/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/cache-with-singleton/app/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/cache-with-singleton/app/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/cache-with-singleton/app/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/cache-with-singleton/app/src/Dictionary/Dictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/cache-with-singleton/app/src/Dictionary/Dictionary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/cache-with-singleton/app/src/Dictionary/Language.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/cache-with-singleton/app/src/Dictionary/Language.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/cache-with-singleton/app/src/Helpers/DictionaryJSONResponseHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/cache-with-singleton/app/src/Helpers/DictionaryJSONResponseHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/cache-with-singleton/app/src/Helpers/HttpHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/cache-with-singleton/app/src/Helpers/HttpHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/cache-with-singleton/app/src/Search/DefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/cache-with-singleton/app/src/Search/DefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/cache-with-singleton/app/src/Search/WebServiceDefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/cache-with-singleton/app/src/Search/WebServiceDefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-static-factory/cache-with-singleton/app/test/unit/src/Dictionary/DictionaryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/cache-with-singleton/app/test/unit/src/Dictionary/DictionaryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/app/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/app/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/app/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/app/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/app/src/Dictionary/Dictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/app/src/Dictionary/Dictionary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/app/src/Dictionary/Language.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/app/src/Dictionary/Language.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/app/src/Dictionary/SimpleDictionaryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/app/src/Dictionary/SimpleDictionaryFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/app/src/Helpers/DictionaryJSONResponseHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/app/src/Helpers/DictionaryJSONResponseHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/app/src/Helpers/HttpHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/app/src/Helpers/HttpHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/app/src/Search/DefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/app/src/Search/DefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/app/src/Search/LocalBackupDefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/src/Search/LocalBackupDefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/app/src/Search/WebServiceDefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/app/src/Search/WebServiceDefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/app/src/Search/backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/app/src/Search/backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/app/test/unit/src/Dictionary/DictionaryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/app/test/unit/src/Dictionary/DictionaryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/src/Dictionary/Dictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/src/Dictionary/Dictionary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/src/Dictionary/DictionaryType.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/src/Dictionary/DictionaryType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/src/Dictionary/Factories/DictionaryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/src/Dictionary/Factories/DictionaryFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/src/Dictionary/Factories/GeneralDictionaryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/src/Dictionary/Factories/GeneralDictionaryFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/src/Dictionary/GeneralDictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/src/Dictionary/GeneralDictionary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/src/Dictionary/Language.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/src/Dictionary/Language.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/src/Dictionary/LegalDictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/src/Dictionary/LegalDictionary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/src/Dictionary/MedicalDictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/src/Dictionary/MedicalDictionary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/src/Helpers/DictionaryJSONResponseHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/src/Helpers/DictionaryJSONResponseHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/src/Helpers/HttpHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/src/Helpers/HttpHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/src/Search/DefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/src/Search/DefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/src/Search/LocalBackupDefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/src/Search/LocalBackupDefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/src/Search/WebServiceDefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/src/Search/WebServiceDefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/src/Search/backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/src/Search/backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/classic/app/test/unit/src/Dictionary/DictionaryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/classic/app/test/unit/src/Dictionary/DictionaryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/src/Dictionary/Dictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/src/Dictionary/Dictionary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/src/Dictionary/DictionaryType.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/src/Dictionary/DictionaryType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/src/Dictionary/GeneralDictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/src/Dictionary/GeneralDictionary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/src/Dictionary/Language.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/src/Dictionary/Language.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/src/Dictionary/LegalDictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/src/Dictionary/LegalDictionary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/src/Dictionary/MedicalDictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/src/Dictionary/MedicalDictionary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/src/Dictionary/SimpleDictionaryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/src/Dictionary/SimpleDictionaryFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/src/Helpers/DictionaryJSONResponseHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/src/Helpers/DictionaryJSONResponseHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/src/Helpers/HttpHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/src/Helpers/HttpHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/src/Search/DefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/src/Search/DefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/src/Search/LocalBackupDefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/03-static-factory/app/src/Search/LocalBackupDefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/src/Search/WebServiceDefinitionSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/src/Search/WebServiceDefinitionSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/src/Search/backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/src/Search/backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dedicated-factory/parameterized/app/test/unit/src/Dictionary/DictionaryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/01-Creational/04-dedicated-factory/parameterized/app/test/unit/src/Dictionary/DictionaryTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,17 +121,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/04-dedicated-factory/classic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/02-behavioural" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/02-behavioural" />
       <recent name="$PROJECT_DIR$/04-dedicated-factory/classic" />
       <recent name="$PROJECT_DIR$/04-dedicated-factory" />
       <recent name="$PROJECT_DIR$/04-dedicated-factory/parameterized" />
       <recent name="$PROJECT_DIR$/03-static-factory/cache-with-singleton" />
-      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/01Factories" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -51,6 +150,11 @@
       <workItem from="1600582672243" duration="7812000" />
       <workItem from="1600616506314" duration="698000" />
       <workItem from="1600803143357" duration="1459000" />
+      <workItem from="1600840323051" duration="71000" />
+      <workItem from="1600885387841" duration="599000" />
+      <workItem from="1600934745988" duration="51000" />
+      <workItem from="1601100026991" duration="180000" />
+      <workItem from="1601100214928" duration="718000" />
     </task>
     <servers />
   </component>
@@ -62,10 +166,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="694" y="160" width="522" height="801" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1600803526370" />
-    <state x="567" y="68" width="766" height="984" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600584693878">
+    <state x="567" y="68" width="766" height="984" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601100528520">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="567" y="68" width="766" height="984" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1600584693878" />
+    <state x="567" y="68" width="766" height="984" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601100528520" />
     <state x="0" y="212" width="1920" height="697" key="NewPhpClassDialog" timestamp="1600803480074">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
