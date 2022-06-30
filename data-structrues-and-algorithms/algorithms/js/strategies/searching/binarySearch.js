@@ -14,9 +14,8 @@ function binSearch(arr, data){
     }
     return -1 
 }
-
+console.log("First Binary Search Implementation")
 console.log(binSearch([1,2,4,6,20, 30], 6));
-
 
 function binarySearch(items, value) {
   var startIndex = 0,
@@ -32,6 +31,7 @@ function binarySearch(items, value) {
   }
   return (items[middle] != value) ? " not found" : middle;
 }
+console.log("Second Binary Search Implementation")
 var items = [2, 4, 45, 67, 90, 9];
 console.log(binarySearch(items, 8));
 console.log(binarySearch(items, 2));
@@ -65,11 +65,25 @@ console.log(binarySearch(items, 2));
     }
     return -1;
 }
-console.log("binarySearch")
+console.log("Third Binary Search Implementation")
 console.log(binarySearch([4, 6, 10], 10));
 console.log(binarySearch([1, 2, 3, 4, 5, 6, 7], 5))
 console.log(binarySearch([10, 6, 4], 10))
 console.log(binarySearch([10, 6, 4], 4))
+
+
+function binary_search(items, key){
+    if (items == null)return null
+    let i = Math.floor(items.length / 2)
+    if (key == items[i])return items[i]
+    if (key > items[i])
+        sliced = items.slice(i+1,items.length)
+    else
+        sliced = items.slice(0, i-1)
+    return binary_search(sliced, key)
+  }
+  console.log("Fourth Binary Search Implementation")
+  console.log(binary_search([1,2,4,5],5))
 
 /**
  * Given an array of numbers sorted in an ascending order, find the ceiling of a given number ‘key’. 
@@ -94,7 +108,7 @@ function searchCeilingOfANumber(arr, key){
     return start;
 }
 
-console.log("searchCeilingOfANumber")
+console.log("First Binary search case study: searchCeilingOfANumber")
 console.log(searchCeilingOfANumber([4, 6, 10], 6))
 console.log(searchCeilingOfANumber([1, 3, 8, 10, 15], 12))
 console.log(searchCeilingOfANumber([4, 6, 10], 17))
@@ -122,30 +136,11 @@ function searchFloorOfANumber(arr, key){
     }
     return end;
 }
-
-console.log("searchFloorOfANumber")
+console.log("Second Binary search case study: searchFloorOfANumber")
 console.log(searchFloorOfANumber([4, 6, 10], 6))
 console.log(searchFloorOfANumber([1, 3, 8, 10, 15], 12))
 console.log(searchFloorOfANumber([4, 6, 10], 17))
 console.log(searchFloorOfANumber([4, 6, 10], -1))
-
-function binSearch(arr, data){
-  var upperBound = arr.length -1 ;
-  var lowerBound = 0;
-  while(lowerBound <= upperBound){
-      var mid = Math.floor((upperBound+lowerBound)/2);
-      if(arr[mid] < data){
-          lowerBound = mid + 1;
-      }else if(arr[mid]> data){
-          upperBound = mid -1 
-      }
-      else{
-          return mid
-      }
-  }
-  return -1 
-}
-
 
 function count(arr, data){
   var count = 0;
@@ -169,20 +164,7 @@ function count(arr, data){
   }
   return count
 }
-
-// console.log(count([1,2,4,5,5,6,6,7,8],5))
-
-function binary_search(items, key){
-  if (items == null)return null
-  let i = Math.floor(items.length / 2)
-  if (key == items[i])return items[i]
-  if (key > items[i])
-      sliced = items.slice(i+1,items.length)
-  else
-      sliced = items.slice(0, i-1)
-  return binary_search(sliced, key)
-}
-
-console.log(binSearch([1,2,4,5],5))
+console.log("Third Binary search case study: Count")
+console.log(count([1,2,4,5,5,6,6,7,8],5))
 
 
